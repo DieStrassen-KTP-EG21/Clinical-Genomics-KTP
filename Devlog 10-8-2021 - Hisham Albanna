@@ -1,0 +1,27 @@
+Some general notes and info about learning resources I liked using till now
+
+Yesterday I was stuck with an issue where in the Layers Preview in GeoServer using the Openlayers format would
+display an empty map. After much work, I figured out that probelem was that GeoServer needs to have only specific Java versions 
+to work, and the Java JRE version I had was Java 16 which is not compatible with GeoServer. I switch my Java version to Java 8 and
+the issue was resolved. Here is link to GeoServer's User manual page for compatible Java versions: 
+https://docs.geoserver.org/latest/en/user/production/java.html
+
+Here are some extra learning resources I am using along with resources provided in the orienation PDF:
+
+For Bootstrap I found a really great online course that teaches by building projects (I find doing projects very helpful). However it is based on an older 
+version of Bootstrap so there might be some slight differences if you're using a newer version.
+
+https://www.eduonix.com/courses/Web-Development/Learn-Bootstrap-Development-By-Building-10-Projects?coupon_code=vnfree
+
+For Flask there is a popular playlist among Flask learners by Corey Schafer on youtube. I found this playlist to be easier to understand than the 
+official documentation:
+
+https://www.youtube.com/playlist?list=PL-osiE80TeTs4UjLw5MM6OjgkjFeUxCYH
+
+Also as a general reference for JQuery and Bootstrap I am using w3schools.com 
+
+https://www.w3schools.com/jquERy/default.asp
+https://www.w3schools.com/bootstrap/bootstrap_ver.asp
+
+Thank you
+
