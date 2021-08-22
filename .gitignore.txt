@@ -1,2 +1,2 @@
-Genome Analyzer\API\GA\__pycache__
-Genome Analyzer\API\GA\routes
+Genome Analyzer/API/GA/__pycache__
+Genome Analyzer/API/GA/routes/__pycache__
