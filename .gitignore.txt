@@ -1,0 +1,2 @@
+Genome Analyzer\API\GA\__pycache__
+Genome Analyzer\API\GA\routes
