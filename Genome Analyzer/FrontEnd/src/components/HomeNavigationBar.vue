@@ -1,18 +1,20 @@
 <template>
   <div class="navbar-container justify-content-center">
     <div class="navbar-list">
-      <ul>
+      <ul id="firstul">
+          <img src="../assets/images.png" id="logo" />
+        <li>
+          Hospital Mangement System
+        </li>
+      </ul>
+      <ul id="secul">
 
         <router-link to="/" tag="li">
-          <a>Home_page</a>
-        </router-link>
-
-        <router-link to="/Nurse" tag="li">
-          <a>Nurse_page</a>
+          <a>Home</a>
         </router-link>
 
         <router-link to="/Login" tag="li">
-          <a>Login_page</a>
+          <a>Login</a>
         </router-link>
 
       </ul>
@@ -29,6 +31,20 @@ export default {
 
 
 <style scoped>
+#logo
+{
+  margin: 15px 0px;
+  height:40px;
+}
+#firstul 
+{
+  float: left;
+}
+#secul
+{
+  float: right;
+  margin-right: 10%;
+}
 .navbar-container {
   width: 100%;
   margin: 0%;
@@ -41,7 +57,7 @@ ul {
   display: inline-flex;
 }
 li {
-  padding: 28px 17px;
+  padding: 25px 17px;
   text-align: center;
   float: right;
   color: #ffffff;

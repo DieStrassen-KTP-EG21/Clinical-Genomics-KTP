@@ -34,4 +34,17 @@ const router = new VueRouter({
 });
 
 
+router.beforeEach((to, from, next) => {
+  console.log(store.getters["Authorization/GetStatus"]);
+  if (to.matched.some((record) => record.meta.isLogged)) {
+    if (store.getters["Authorization/GetStatus"] == "success") {
+      next("/");
+      return;
+    }
+  } else {
+    next();
+  }
+});
+
+
 export default router;

@@ -1,42 +1,150 @@
 <template>
   <div class="cont">
     <HomeNavigation />
-    <div>
-      <div class="home row col-12 justify-content-center px-0 m-0">
-        <h3>Login</h3>
-      </div>
-    </div>
+    <div class="container">
+	<div class="d-flex justify-content-center h-100">
+		<div class="card">
+			<div class="card-header">
+				<h3>Login</h3>
+			</div>
+			<div class="card-body">
+				<form>
+					<div class="input-group form-group">
+						<input  v-model="email" type="text" class="form-control" placeholder="username">
+						
+					</div>
+					<div class="input-group form-group">
+						<input  v-model="password" type="password" class="form-control" placeholder="password">
+					</div>
+          <div>
+           <h4>Login as </h4>
+           <select v-model="type" id="type">
+             <option value="1" >Admin</option>
+             <option value="2">Doctor</option>
+             <option value="3" selected>Nurse</option>
+          </select>
+          </div>
+					<div class="row align-items-center remember">
+						<input type="checkbox">Remember Me
+					</div>
+					<div class="form-group">
+						<Button class="btn float-right login_btn" @click="login()">Login</Button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
   </div>
 </template>
 
 <script>
 import HomeNavigation from "@/components/HomeNavigationBar.vue";
-
 export default {
   name: "Login",
   components: {
     HomeNavigation
   },
+    data: function () {
+    return {
+      email: "",
+      password: "",
+      type: 1,
+      //validation
+      trigger_validation: false,
+      can_submit: true,
+    };
+  },
+  methods: {
+    login() {
+      console.log(this.email);
+      console.log(this.password);
+      console.log(this.type);
+      this.trigger_validation = true;
+      this.can_submit = true;
+      this.req_email;
+      this.req_password;
+      setTimeout(() => {
+        if (this.can_submit) {
+          let user = {
+            email: this.email,
+            password: this.password,
+            type: parseInt(this.type),
+          };
+          this.$store.dispatch("Authorization/login", user);
+        }
+      }, 200);
+    },
+  },
+  
 };
 </script>
 
 <style scoped>
-.cont {
-  height: calc(200vh);
-  background-color: rgb(133, 167, 187);
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+
+.cont{
+background-image: url('../assets/Hospital-Management-System_Fortech.webp');
+background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+font-family: 'Numans', sans-serif;
+height: calc(100vh);
+align-content: center;
 }
-.home {
-  background-repeat: no-repeat;
-  height: calc(70vh);
-  width: 100%;
-  background-position: center;
-  background-size: 100% 100%;
-  position: absolute;
+
+.card{
+height: 370px;
+margin-top: 140px;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
 }
-.BROWS {
-  background-color: rgb(16, 17, 17);
-  width: 100px;
-  height: 100px;
-  margin-top: 400px;
+
+
+.card-header h3{
+color: white;
 }
+
+input:focus{
+outline: 0 0 0 0  !important;
+box-shadow: 0 0 0 0 !important;
+
+}
+
+.form-control
+{
+  margin: 15px 0px;
+}
+
+.remember ,h4{
+color: white;
+}
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.login_btn{
+color: black;
+background-color: rgb(107, 180, 185);
+width: 100px;
+}
+
+.login_btn:hover{
+color: black;
+background-color: rgb(37, 91, 122);
+}
+select{
+  width: 150px;
+  color: black;
+  margin-bottom: 10px;
+}
+
 </style>
