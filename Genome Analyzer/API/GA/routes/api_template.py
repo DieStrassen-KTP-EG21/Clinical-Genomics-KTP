@@ -3,7 +3,7 @@ from flask_restful import Resource
 class Api_template(Resource):
     # Write method which will be executed via GET request
     def get(self):
-        return {'geet': 'get req'}, 200
+        return {'success': True, 'message': 'deployment is successful'}, 200
 
     # Write method which will be executed via POST request
     def post(self):
