@@ -10,6 +10,6 @@ def authenticate_type(type):
 			if(current_user.EmployeeType != type):
 				return {"success": False, "err": "You are not a " + type}, 403
 
-			return func(*args, **kwargs)
+			return func(current_user,*args, **kwargs)
 		return auth
 	return auth_type
