@@ -6,7 +6,7 @@
         <h1>Add a Patient</h1>
         <form class="row gy-2 gx-3 align-items-center">
           <div class="col-auto">
-            <label class="visually-hidden" for="autoSizingInput">Name</label>
+            <label class="visually-hidden">Name</label>
             <input
               type="text"
               v-model="name"
@@ -16,7 +16,7 @@
             />
           </div>
           <div class="col-auto">
-            <label class="visually-hidden" for="autoSizingInput">ID</label>
+            <label class="visually-hidden">ID</label>
             <input
               type="number"
               v-model="ID"
@@ -26,7 +26,7 @@
             />
           </div>
           <div class="col-auto">
-            <label class="visually-hidden" for="autoSizingInput">DNA</label>
+            <label class="visually-hidden">DNA</label>
             <input
               type="text"
               v-model="DNA"
@@ -92,5 +92,6 @@ export default {
   position: absolute;
 }
 .col-auto {
-  margin: 20px auto;}
+  margin: 20px auto;
+}
 </style>

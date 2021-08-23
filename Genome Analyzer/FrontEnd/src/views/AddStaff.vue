@@ -6,7 +6,7 @@
         <h1>Add Staff</h1>
         <form class="row gy-2 gx-3 align-items-center">
           <div class="col-auto">
-            <label class="visually-hidden" for="autoSizingInput">Name</label>
+            <label class="visually-hidden">Name</label>
             <input
               type="text"
               v-model="Name"
@@ -14,7 +14,7 @@
               id="autoSizingInput"
               placeholder="Name"
             />
-            <label class="visually-hidden" for="autoSizingInput">Gender</label>
+            <label class="visually-hidden">Gender</label>
             <input
               type="text"
               v-model="Gender"
@@ -22,9 +22,7 @@
               id="autoSizingInput"
               placeholder="Gender"
             />
-            <label class="visually-hidden" for="autoSizingInput"
-              >EmployeeType</label
-            >
+            <label class="visually-hidden">EmployeeType</label>
             <input
               type="text"
               v-model="EmployeeType"
@@ -34,7 +32,7 @@
             />
           </div>
           <div class="col-auto">
-            <label class="visually-hidden" for="autoSizingInput">ID</label>
+            <label class="visually-hidden">ID</label>
             <input
               type="number"
               v-model="ID"
@@ -42,7 +40,7 @@
               id="autoSizingInput"
               placeholder="ID"
             />
-            <label class="visually-hidden" for="autoSizingInput">Email</label>
+            <label class="visually-hidden">Email</label>
             <input
               type="text"
               v-model="Email"
@@ -50,7 +48,7 @@
               id="autoSizingInput"
               placeholder="Email"
             />
-            <label class="visually-hidden" for="autoSizingInput">Phone</label>
+            <label class="visually-hidden">Phone</label>
             <input
               type="number"
               v-model="Phone"
@@ -60,9 +58,7 @@
             />
           </div>
           <div class="col-auto">
-            <label class="visually-hidden" for="autoSizingInput"
-              >Password</label
-            >
+            <label class="visually-hidden">Password</label>
             <input
               type="text"
               v-model="Password"
@@ -70,7 +66,7 @@
               id="autoSizingInput"
               placeholder="Password"
             />
-            <label class="visually-hidden" for="autoSizingInput">Address</label>
+            <label class="visually-hidden">Address</label>
             <input
               type="text"
               v-model="Address"
