@@ -1,4 +1,5 @@
 from flask_restful import Resource, reqparse
+from GA import cors
 from GA.controllers.signup_controller import sign_up
 from GA.controllers.authenticate import authenticate
 from GA.controllers.authenticate_type import authenticate_type

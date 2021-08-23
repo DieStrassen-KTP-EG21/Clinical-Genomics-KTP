@@ -1,4 +1,5 @@
 from flask_restful import Resource
+from GA import cors
 
 class Api_template(Resource):
     # Write method which will be executed via GET request

@@ -3,6 +3,7 @@ from flask_restful import Api
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 import jwt
+from flask_cors import CORS
 
 
 # definitions
@@ -10,6 +11,7 @@ app = Flask(__name__)
 api = Api(app)
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
+cors = CORS(app)   # you can filter origins but we will do it later    
 
 
 # constants

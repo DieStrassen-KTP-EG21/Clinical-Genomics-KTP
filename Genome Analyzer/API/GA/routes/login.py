@@ -1,6 +1,6 @@
 from flask_restful import Resource, reqparse
 from GA.controllers.login_controller import login
-
+from GA import cors
 
 login_args = reqparse.RequestParser()
 login_args.add_argument("Name", type=str, help="Name is required", required=True)
