@@ -4,6 +4,9 @@ import store from "../store";
 import Home from "../views/Home.vue";
 import Nurse from "../views/Nurse.vue";
 import Login from "../views/Login.vue";
+import Admin from "../views/Admin.vue";
+import AddStaff from "../views/AddStaff.vue";
+
 
 Vue.use(VueRouter);
 
@@ -22,6 +25,16 @@ const routes = [
     path: "/Login",
     name: "Login",
     component: Login,
+  },
+  {
+    path: "/AddStaff",
+    name: "AddStaff",
+    component: AddStaff,
+  },
+  {
+    path: "/Admin",
+    name: "Admin",
+    component: Admin,
   },
   
 ];

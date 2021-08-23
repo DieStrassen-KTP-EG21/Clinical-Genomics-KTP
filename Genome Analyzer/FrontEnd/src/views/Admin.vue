@@ -1,24 +1,22 @@
 <template>
   <div class="cont">
     <HomeNavigation />
-    <div>
-      <div class="home row col-12 justify-content-center px-0 m-0">
-        <h3>Gene Analyzer</h3>
-      </div>
-    </div>
-    <div class="image">
-          <img src="../assets/chromosome.jpg"/>
+    <div></div>
+    <router-link to="/AddStaff" tag="button">Add Staff</router-link>
+
+
+    <div class="home row col-12 justify-content-center px-0 m-0">
+      <h1>Admin</h1>
     </div>
   </div>
 </template>
 
 <script>
 import HomeNavigation from "@/components/HomeNavigationBar.vue";
-
 export default {
-  name: "Home",
+  name: "Admin",
   components: {
-    HomeNavigation
+    HomeNavigation,
   },
 };
 </script>
@@ -36,13 +34,10 @@ export default {
   background-size: 100% 100%;
   position: absolute;
 }
-.image {
-  margin-top: 80px;
+.BROWS {
+  background-color: rgb(16, 17, 17);
+  width: 100px;
+  height: 100px;
+  margin-top: 400px;
 }
-img {
-  max-width: 800px;
-  max-height: 700px;
-  border-radius: 5%;
-}
-
 </style>
