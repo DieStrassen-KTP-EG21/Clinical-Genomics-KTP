@@ -1,7 +1,8 @@
 from flask_restful import Resource, reqparse
 from GA.controllers.signup_controller import sign_up
 from GA.controllers.authenticate import authenticate
-
+from GA.controllers.authenticate_type import authenticate_type
+from GA import DOCTOR, NURSE, DM
 
 sign_up_args = reqparse.RequestParser()
 sign_up_args.add_argument("Name", type=str, help="Name is required", required=True)
@@ -13,9 +14,10 @@ sign_up_args.add_argument("Password", type=str, help="Password is required", req
 sign_up_args.add_argument("EmployeeType", type=str, help="EmployeeType is required", required=True)
 
 
-class Sign_up(Resource): ## TODO: restrict access to sign up to be for DataManager ONLY
+class Sign_up(Resource):
 	@authenticate
-	def post(self, current_user):
+	@authenticate_type(DM)
+	def post(self):
 		args = sign_up_args.parse_args()
 		name = args["Name"]
 		gender = args["Gender"]
