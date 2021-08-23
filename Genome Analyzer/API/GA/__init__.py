@@ -2,7 +2,7 @@ from flask import Flask
 from flask_restful import Api
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
-from datetime import timedelta
+import jwt
 
 
 # definitions
@@ -13,8 +13,8 @@ bcrypt = Bcrypt(app)
 
 # configurations
 app.config['SQLALCHEMY_DATABASE_URI']= 'sqlite:///GA_Database.db'
-app.config["JWT_SECRET_KEY"] = "4389573498057349857897230984723"
-app.config["JWT_ACCESS_TOKEN_EXPIRES"] = timedelta(minutes=10)
+app.config["SECRET_KEY"] = "12345-54321-12345"
+app.config['ACCESS_TOKEN_DURATION'] =  20              # in seconds
 
 # importing models
 from GA.models.staff import Staff

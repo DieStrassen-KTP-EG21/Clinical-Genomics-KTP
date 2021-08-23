@@ -2,4 +2,4 @@ flask
 flask-restful
 sqlalchemy
 flask_bcrypt
-flask-jwt-extended
+pyJWT
