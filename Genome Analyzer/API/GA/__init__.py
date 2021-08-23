@@ -2,7 +2,6 @@ from flask import Flask
 from flask_restful import Api
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
-from flask_jwt_extended import JWTManager
 from datetime import timedelta
 
 
@@ -11,7 +10,6 @@ app = Flask(__name__)
 api = Api(app)
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
-jwt = JWTManager(app)
 
 # configurations
 app.config['SQLALCHEMY_DATABASE_URI']= 'sqlite:///GA_Database.db'

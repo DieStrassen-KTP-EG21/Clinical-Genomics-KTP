@@ -1,6 +1,6 @@
 from flask_restful import Resource, reqparse
 from GA.controllers.signup_controller import sign_up
-#from flask_jwt_extended import jwt_required
+
 
 
 sign_up_args = reqparse.RequestParser()
@@ -14,7 +14,7 @@ sign_up_args.add_argument("EmployeeType", type=str, help="EmployeeType is requir
 
 
 class Sign_up(Resource): ## TODO: restrict access to sign up to be for DataManager ONLY
-	#@jwt_required()
+	
 	def post(self):
 		args = sign_up_args.parse_args()
 		name = args["Name"]
