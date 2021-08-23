@@ -17,3 +17,5 @@ class Api_template(Resource):
     def delete(self):
         return {'deel': 'del req'}, 200
     
+
+    
