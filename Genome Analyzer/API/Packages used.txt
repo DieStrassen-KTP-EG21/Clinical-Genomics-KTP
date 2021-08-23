@@ -3,3 +3,4 @@ flask-restful
 sqlalchemy
 flask_bcrypt
 pyJWT
+gunicorn
