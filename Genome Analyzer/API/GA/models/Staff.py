@@ -1,15 +1,15 @@
-import sys
-sys.path.append("..")
 from GA import db
+
+
 class Staff(db.Model):
-    Name= db.Column(db.String(50),nullable=False)
-    ID = db.Column(db.Integer, primary_key=True, nullable=True)
-    Gender= db.Column(db.String(50),nullable=False)
-    Phone= db.Column(db.Integer,nullable=True)
-    Address= db.Column(db.String(50),nullable=True)
-    Email= db.Column(db.String(50),nullable=True)
-    Password= db.Column(db.String(50),nullable=True)
-    Employee= db.Column(db.String(50),nullable=True)
+    Name= db.Column(db.String(50),nullable=False, unique=True)
+    ID = db.Column(db.Integer, primary_key=True, nullable=False)
+    Gender= db.Column(db.String(10),nullable=False)
+    Phone= db.Column(db.String(30),nullable=False)
+    Address= db.Column(db.String(50),nullable=False)
+    Email= db.Column(db.String(50),nullable=False)
+    Password= db.Column(db.String(50),nullable=False)
+    EmployeeType= db.Column(db.String(15),nullable=False)
 
 
     def __repr__(self):

@@ -8,9 +8,12 @@ api = Api(app)
 db = SQLAlchemy(app)
 
 
-# import APIs classes here
-from routes.Api_template import Api_template
+#importing models
+from GA.models.staff import Staff
 
+
+# import APIs classes here
+from GA.routes.api_template import Api_template
 
 
 

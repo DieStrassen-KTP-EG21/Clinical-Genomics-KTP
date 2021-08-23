@@ -1,0 +1,9 @@
+to add more tables to the database:
+	1- create the table in a .py file in models folder
+	2- via the terminal, go to API folder then type "python"
+	3- type "from GA import db"
+	4- type "db.create_all()"
+
+This will add the tables that we will create later on to the database
+
+Youc can use the file Staff.py as a template for upcoming tables
