@@ -4,3 +4,4 @@ sqlalchemy
 flask_bcrypt
 pyJWT
 gunicorn
+flask-cors
