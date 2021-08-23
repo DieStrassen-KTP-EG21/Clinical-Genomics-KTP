@@ -1,7 +1,5 @@
-import sys
-from pathlib import Path
-sys.path.append(str(Path(__file__).parent.parent.absolute()))
-from Database import db
+from GA import db
+
 
 class Staff(db.Model):
     Name= db.Column(db.String(50),nullable=False, unique=True)
