@@ -19,7 +19,7 @@
           <router-link
             class="costum-btn"
             id="signin-btn"
-            to="/Nurse"
+            to="/Admin"
             tag="button"
             v-if="isLoggedIn =='success'"
           >
@@ -56,7 +56,7 @@ export default {
   
   background-repeat: no-repeat;
   width: 100%;
-  height: 700px;
+  height: 673px;
   background-position: center;
   background-size: 100% 100%;
   position:absolute;
