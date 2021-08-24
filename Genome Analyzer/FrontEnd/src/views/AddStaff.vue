@@ -89,9 +89,7 @@
 
 <script>
 import HomeNavigation from "@/components/HomeNavigationBar.vue";
-import axios from "axios";
 
-//const API = "https://genomicanalyzer.herokuapp.com/signup";
 
 export default {
   name: "AddStaff",
@@ -122,17 +120,8 @@ export default {
         Phone: this.Phone,
       };
       console.log(newMember);
+      this.$store.dispatch("Authorization/addstaff", newMember);
       e.preventDefault();
-      axios.defaults.headers.common["access-token"] = localStorage.getItem("access-token");
-      axios.post("https://genomicanalyzer.herokuapp.com/signup", {
-        Name: this.Name,
-        Password: this.Password,
-        Gender: this.Gender,
-        Email: this.Email,
-        EmployeeType: this.EmployeeType,
-        Address: this.Address,
-        Phone: this.Phone,
-      });
       this.Name = "";
       this.ID = "";
       this.Password = "";
