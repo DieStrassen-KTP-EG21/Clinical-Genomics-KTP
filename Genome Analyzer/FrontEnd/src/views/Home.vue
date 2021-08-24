@@ -22,7 +22,6 @@
 
 <script>
 import HomeNavigation from "@/components/HomeNavigationBar.vue";
-
 export default {
   name: "Home",
   components: {
@@ -46,7 +45,6 @@ export default {
   background-image: url("../assets/a.jpg");
     color: black;
 }
-
 .headers {
   justify-content: center;
   justify-items: center;
@@ -99,5 +97,4 @@ background-color: rgb(107, 180, 185);
     width: 100%;
   }
 }
-
 </style>

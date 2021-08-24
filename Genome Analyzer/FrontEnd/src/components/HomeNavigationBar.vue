@@ -1,14 +1,16 @@
 <template>
   <div class="navbar-container justify-content-center">
     <div class="navbar-list">
-      <ul id="firstul">
+      <router-link to="/">
+        <ul id="firstul">
           <img src="../assets/images.png" id="logo" />
-        <li>
-          Hospital Mangement System
-        </li>
-      </ul>
-      <ul id="secul">
+          <li>
+            Hospital Mangement System
+          </li>
+        </ul>
+      </router-link>
 
+      <ul id="secul">
         <router-link to="/" tag="li">
           <a>Home</a>
         </router-link>
@@ -16,32 +18,26 @@
         <router-link to="/Login" tag="li">
           <a>Login</a>
         </router-link>
-
       </ul>
     </div>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: "HomeNavigation"
+  name: "HomeNavigation",
 };
 </script>
 
-
 <style scoped>
-#logo
-{
+#logo {
   margin: 15px 0px;
-  height:40px;
+  height: 40px;
 }
-#firstul 
-{
+#firstul {
   float: left;
 }
-#secul
-{
+#secul {
   float: right;
   margin-right: 10%;
 }
@@ -85,9 +81,8 @@ a:hover {
   position: fixed;
   margin: 0;
 }
-#logout
-{
-  background-color:rgb(96, 155, 189);
+#logout {
+  background-color: rgb(96, 155, 189);
   border-radius: 10px;
   height: 50px;
   margin-top: 20px;
