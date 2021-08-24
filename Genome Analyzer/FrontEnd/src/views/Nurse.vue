@@ -2,8 +2,8 @@
   <div>
     <div class="cont">
       <HomeNavigation />
-      <div>
-        <h1>Add a Patient</h1>
+      <div class="background">
+        <h1>Upload Patient's Data</h1>
         <form class="row gy-2 gx-3 align-items-center">
           <div class="col-auto">
             <label class="visually-hidden">Name</label>
@@ -80,12 +80,11 @@ export default {
 
 <style scoped>
 .cont {
-  height: calc(200vh);
-  background-color: rgb(133, 167, 187);
+  background-image: url("../assets/Nurse-with-chart.jpg");
 }
-.home {
+.cont {
   background-repeat: no-repeat;
-  height: calc(70vh);
+  height: calc(97vh);
   width: 100%;
   background-position: center;
   background-size: 100% 100%;
@@ -93,5 +92,10 @@ export default {
 }
 .col-auto {
   margin: 20px auto;
+}
+.background
+{
+  background-color: rgba(139, 138, 138, 0.507);
+  border-radius: 20px;
 }
 </style>
