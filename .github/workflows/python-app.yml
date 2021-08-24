@@ -31,6 +31,7 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
   run:
+    needs: build
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -41,7 +42,10 @@ jobs:
         PID=$!
         sleep 6
         kill $PID
+        
+        
   deploy:
+    needs: [build, run]
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
