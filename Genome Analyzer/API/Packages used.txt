@@ -5,3 +5,5 @@ flask_bcrypt
 pyJWT
 gunicorn
 flask-cors
+re
+Bio
