@@ -3,7 +3,7 @@ from GA import cors
 from GA.controllers.signup_controller import sign_up
 from GA.controllers.authenticate import authenticate
 from GA.controllers.authenticate_type import authenticate_type
-from GA import DOCTOR, NURSE, DM
+from GA import DM
 
 sign_up_args = reqparse.RequestParser()
 sign_up_args.add_argument("Name", type=str, help="Name is required", required=True)
@@ -17,8 +17,8 @@ sign_up_args.add_argument("EmployeeType", type=str, help="EmployeeType is requir
 
 class Sign_up(Resource):
 	@authenticate
-	@authenticate_type(DM)
-	def post(self, current_user):
+	@authenticate_type([DM])
+	def post(current_user, self):
 		args = sign_up_args.parse_args()
 		name = args["Name"]
 		gender = args["Gender"]

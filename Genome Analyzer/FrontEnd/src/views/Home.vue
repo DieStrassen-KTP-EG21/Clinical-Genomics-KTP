@@ -63,7 +63,6 @@ export default {
   background-image: url("../assets/a.jpg");
     color: black;
 }
-
 .headers {
   justify-content: center;
   justify-items: center;
