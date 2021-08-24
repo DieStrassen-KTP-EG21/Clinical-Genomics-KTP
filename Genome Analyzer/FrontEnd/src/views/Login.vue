@@ -10,20 +10,12 @@
 			<div class="card-body">
 				<form>
 					<div class="input-group form-group">
-						<input  v-model="email" type="text" class="form-control" placeholder="username">
+						<input  v-model="Name" type="text" class="form-control" placeholder="Username">
 						
 					</div>
 					<div class="input-group form-group">
-						<input  v-model="password" type="password" class="form-control" placeholder="password">
+						<input  v-model="Password" type="password" class="form-control" placeholder="Password">
 					</div>
-          <div>
-           <h4>Login as </h4>
-           <select v-model="type" id="type">
-             <option value="1" >Admin</option>
-             <option value="2">Doctor</option>
-             <option value="3" selected>Nurse</option>
-          </select>
-          </div>
 					<div class="row align-items-center remember">
 						<input type="checkbox">Remember Me
 					</div>
@@ -47,9 +39,8 @@ export default {
   },
     data: function () {
     return {
-      email: "",
-      password: "",
-      type: 1,
+      Name: "",
+      Password: "",
       //validation
       trigger_validation: false,
       can_submit: true,
@@ -57,7 +48,7 @@ export default {
   },
   methods: {
     login() {
-      console.log(this.email);
+      console.log(this.Name);
       console.log(this.password);
       console.log(this.type);
       this.trigger_validation = true;
@@ -67,9 +58,8 @@ export default {
       setTimeout(() => {
         if (this.can_submit) {
           let user = {
-            email: this.email,
-            password: this.password,
-            type: parseInt(this.type),
+            Name: this.Name,
+            Password: this.Password
           };
           this.$store.dispatch("Authorization/login", user);
         }
@@ -121,6 +111,7 @@ box-shadow: 0 0 0 0 !important;
 
 .remember ,h4{
 color: white;
+margin-bottom: 25px;
 }
 
 .remember input
