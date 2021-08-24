@@ -5,7 +5,7 @@ export default {
   namespaced: true,
   state: {
     status: "",
-    token: localStorage.getItem("Authorization") || "",
+    token: localStorage.getItem("x-access-token") || "",
     resendtoken: localStorage.getItem("X-token") || "",
     User: {},
     msg:""
@@ -30,9 +30,9 @@ export default {
   },
   actions: {
     get_user({ commit }, flag) {
-      const token = localStorage.getItem("Authorization");
+      const token = localStorage.getItem("x-access-token");
       console.log(token);
-      axios.defaults.headers.common["Authorization"] = token;
+      axios.defaults.headers.common["x-access-token"] = token;
       commit("auth_request");
       axios
         .get("http://localhost:3000/me")
@@ -45,7 +45,7 @@ export default {
         })
         .catch((error) => {
           commit("auth_error", "user_err");
-          localStorage.removeItem("Authorization");
+          localStorage.removeItem("x-access-token");
           console.log(error);
         });
     },
@@ -54,29 +54,28 @@ export default {
       console.log(user);
       commit("auth_request");
       axios
-        .post("http://localhost:3000/login", {
-          password: user.password,
-          email: user.email,
-          type: user.type,
+        .post("https://genomicanalyzer.herokuapp.com", {
+          Password: user.Password,
+          Name: user.Name
         })
         .then((response) => {
           const token = response.data.token;
-          localStorage.setItem("Authorization", token);
-          axios.defaults.headers.common["Authorization"] = token;
+          localStorage.setItem("x-access-token", token);
+          axios.defaults.headers.common["x-access-token"] = token;
           store.dispatch("Authorization/get_user", true);
         })
         .catch((error) => {
           console.log(error);
           commit("auth_error", "not user by this email");
-          localStorage.removeItem("Authorization");
+          localStorage.removeItem("x-access-token");
         });
     },
     logout({ commit }) {
       commit("logout");
         localStorage.removeItem("X-token");
-        localStorage.removeItem("Authorization");
+        localStorage.removeItem("x-access-token");
         localStorage.removeItem("is-manager");
-        delete axios.defaults.headers.common["Authorization"];
+        delete axios.defaults.headers.common["x-access-token"];
         router.replace("/");
     }
   },
