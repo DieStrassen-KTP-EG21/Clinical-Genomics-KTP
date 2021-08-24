@@ -91,7 +91,7 @@
 import HomeNavigation from "@/components/HomeNavigationBar.vue";
 import axios from "axios";
 
-const API = "https://genomicanalyzer.herokuapp.com/login";
+//const API = "https://genomicanalyzer.herokuapp.com/signup";
 
 export default {
   name: "AddStaff",
@@ -114,7 +114,6 @@ export default {
     AddMember(e) {
       const newMember = {
         Name: this.Name,
-        ID: this.ID,
         Password: this.Password,
         Gender: this.Gender,
         Email: this.Email,
@@ -124,7 +123,8 @@ export default {
       };
       console.log(newMember);
       e.preventDefault();
-      axios.post(API, {
+      axios.defaults.headers.common["access-token"] = localStorage.getItem("access-token");
+      axios.post("https://genomicanalyzer.herokuapp.com/signup", {
         Name: this.Name,
         Password: this.Password,
         Gender: this.Gender,
