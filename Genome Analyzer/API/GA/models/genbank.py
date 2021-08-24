@@ -1,0 +1,23 @@
+from re import fullmatch
+from Bio import SeqIO
+from Bio import pairwise2
+from Bio.pairwise2 import format_alignment
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+
+#Test inputs
+a = Seq("AGCTAACTGATGCAGTCGATGCTAGTGCTGAGTCGTAGCATGCCTAGCTGACTGACGTATGCAGTCATGC")
+b = Seq("CCTGATATGTACTGATCATCCAGTTAGCATGCTGATGCTAGTCATGCGTAGTAGTCACTACGGGGTGACT")
+c = Seq("CGTACGTACGTAGTCGTAGCTAGTCGTACGTAGTCATGCTAGCGTATGCATGCGTACTGAGTCATGTGCTC")
+d = Seq("CGTATGCAGTCGTAGTCAGTCTGATGCTAGCGTACGTAGTCATGTCGTGCTGAGTCTGATGCATGCTGACAGT")
+e = Seq("CATGCGTATGCGTGATGCTACGTATGCATGCTGACTGATGCATGCTGACTGAGTCTGACTGATGCATGCATG")
+f = Seq("ACGTTGATGCAGTCAGTCGTACTGAGTCATGCTGATGCTGATGCAGTCTGAGTCAGTCGTAGTCATG")
+
+recs=[b,c,d,e,f]
+
+def compare(patientDna,storedData):
+    for rec in storedData:
+        result=pairwise2.align.globalxx(patientDna,rec)
+        print(format_alignment(*result[0] ,full_sequences=True))
+
+compare(a,recs)
