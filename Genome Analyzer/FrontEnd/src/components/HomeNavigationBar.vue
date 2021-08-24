@@ -18,7 +18,7 @@
         <router-link to="/Login" tag="li" v-if="isLoggedIn !='success'">
           <a>Login</a>
         </router-link>
-
+        <router-link to="/AddStaff" tag="li" v-if="isLoggedIn =='success' && usertype=='DataManager'" > <a>Add Staff</a></router-link>
         <Button class="btn float-right logout_btn" @click="logout()" v-if="isLoggedIn=='success'">Log out</Button>
 
       </ul>
@@ -39,7 +39,8 @@ export default {
   },
    computed: {
     ...mapGetters({
-      isLoggedIn: "Authorization/GetStatus"
+      isLoggedIn: "Authorization/GetStatus",
+      usertype:"Authorization/usertype"
     })
   }
   };
