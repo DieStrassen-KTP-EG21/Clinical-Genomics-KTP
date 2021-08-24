@@ -5,8 +5,10 @@ from GA.models.patient import Patient
 
 class Report(db.Model):
     ReportNo=db.Column(db.Integer,nullable=False,primary_key=True)
+    DoctorID=db.Column(db.Integer,nullable=False)
     DoctorName=db.Column(db.String(50), nullable=False)
     PatientName=db.Column(db.String(50), nullable=False)
+    PatientID=db.Column(db.Integer,nullable=False)
     ComparisonResult=db.Column(db.String(1000),nullable=False)
 
     def __repr__(self):
