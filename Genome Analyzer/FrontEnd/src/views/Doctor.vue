@@ -15,6 +15,11 @@
         <el-table-column label="Date" prop="date"> </el-table-column>
         <el-table-column label="Name" prop="name"> </el-table-column>
         <el-table-column label="ID" prop="ID"> </el-table-column>
+          <el-table-column > 
+          <router-link to="/Patient" tag="li" >
+          <a>Show</a>
+           </router-link>
+         </el-table-column>
       </el-table>
     </div>
   </div>

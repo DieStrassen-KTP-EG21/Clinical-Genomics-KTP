@@ -83,7 +83,7 @@ export default {
     }
   },
   getters: {
-    Username: (state) => state.User.displayName,
+    Username: (state) => state.User.Name,
     GetStatus: (state) => state.status,
     user: (state) => state.User,
     userid: (state) => state.User._id,

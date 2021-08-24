@@ -2,8 +2,7 @@
   ><div>
     <div class="cont">
       <HomeNavigation />
-      <router-link to="/AddStaff" tag="button">Add Staff</router-link>
-
+     
       <el-table :data="tableData" style="width: 100%">
         <el-table-column type="expand">
           <template #default="props">
@@ -15,6 +14,11 @@
         <el-table-column label="Date" prop="date"> </el-table-column>
         <el-table-column label="Name" prop="name"> </el-table-column>
         <el-table-column label="ID" prop="ID"> </el-table-column>
+         <el-table-column > 
+          <router-link to="/Patient" tag="li" >
+          <a>Show</a>
+           </router-link>
+         </el-table-column>
       </el-table>
     </div>
   </div>

@@ -32,14 +32,6 @@
             />
           </div>
           <div class="col-auto">
-            <label class="visually-hidden">ID</label>
-            <input
-              type="number"
-              v-model="ID"
-              class="form-control"
-              id="autoSizingInput"
-              placeholder="ID"
-            />
             <label class="visually-hidden">Email</label>
             <input
               type="text"
