@@ -17,8 +17,8 @@ sign_up_args.add_argument("EmployeeType", type=str, help="EmployeeType is requir
 
 class Sign_up(Resource):
 	@authenticate
-	@authenticate_type(DM)
-	def post(self, current_user):
+	@authenticate_type([DM])
+	def post(current_user, self):
 		args = sign_up_args.parse_args()
 		name = args["Name"]
 		gender = args["Gender"]

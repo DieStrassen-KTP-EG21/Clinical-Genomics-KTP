@@ -16,4 +16,4 @@ def login(name, password):
 		else:
 			return {"success": False, "err": "wrong password"}, 401
 	else:
-		return {"success": False, "err": "user doesn't exist"}, 401
+		return {"success": False, "err": "user doesn't exist"}, 404
