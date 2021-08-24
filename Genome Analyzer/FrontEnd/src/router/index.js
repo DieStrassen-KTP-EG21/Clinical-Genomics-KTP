@@ -6,7 +6,9 @@ import Nurse from "../views/Nurse.vue";
 import Login from "../views/Login.vue";
 import Admin from "../views/Admin.vue";
 import AddStaff from "../views/AddStaff.vue";
+import Element from 'element-ui'
 
+Vue.use(Element)
 
 Vue.use(VueRouter);
 

@@ -1,12 +1,21 @@
-<template>
-  <div class="cont">
-    <HomeNavigation />
-    <div></div>
-    <router-link to="/AddStaff" tag="button">Add Staff</router-link>
+<template
+  ><div>
+    <div class="cont">
+      <HomeNavigation />
+      <router-link to="/AddStaff" tag="button">Add Staff</router-link>
 
-
-    <div class="home row col-12 justify-content-center px-0 m-0">
-      <h1>Admin</h1>
+      <el-table :data="tableData" style="width: 100%">
+        <el-table-column type="expand">
+          <template #default="props">
+            <p>State: {{ props.row.state }}</p>
+            <p>City: {{ props.row.city }}</p>
+            <p>Address: {{ props.row.address }}</p>
+          </template>
+        </el-table-column>
+        <el-table-column label="Date" prop="date"> </el-table-column>
+        <el-table-column label="Name" prop="name"> </el-table-column>
+        <el-table-column label="ID" prop="ID"> </el-table-column>
+      </el-table>
     </div>
   </div>
 </template>
@@ -17,6 +26,68 @@ export default {
   name: "Admin",
   components: {
     HomeNavigation,
+  },
+  data() {
+    return {
+      tableData: [
+        {
+          date: "2016-05-03",
+          name: "Tom",
+          state: "California",
+          city: "Los Angeles",
+          address: "No. 189, Grove St, Los Angeles",
+          ID: "90036",
+        },
+        {
+          date: "2016-05-02",
+          name: "Tom",
+          state: "California",
+          city: "Los Angeles",
+          address: "No. 189, Grove St, Los Angeles",
+          ID: " 90036",
+        },
+        {
+          date: "2016-05-04",
+          name: "Tom",
+          state: "California",
+          city: "Los Angeles",
+          address: "No. 189, Grove St, Los Angeles",
+          ID: "90036",
+        },
+        {
+          date: "2016-05-01",
+          name: "Tom",
+          state: "California",
+          city: "Los Angeles",
+          address: "No. 189, Grove St, Los Angeles",
+          ID: " 90036",
+        },
+        {
+          date: "2016-05-08",
+          name: "Tom",
+          state: "California",
+          city: "Los Angeles",
+          address: "No. 189, Grove St, Los Angeles",
+          ID: " 90036",
+        },
+        {
+          date: "2016-05-06",
+          name: "Tom",
+          state: "California",
+          city: "Los Angeles",
+          address: "No. 189, Grove St, Los Angeles",
+          ID: " 90036",
+        },
+        {
+          date: "2016-05-07",
+          name: "Tom",
+          state: "California",
+          city: "Los Angeles",
+          address: "No. 189, Grove St, Los Angeles",
+          ID: " 90036",
+        },
+      ],
+    };
   },
 };
 </script>
@@ -33,11 +104,5 @@ export default {
   background-position: center;
   background-size: 100% 100%;
   position: absolute;
-}
-.BROWS {
-  background-color: rgb(16, 17, 17);
-  width: 100px;
-  height: 100px;
-  margin-top: 400px;
 }
 </style>

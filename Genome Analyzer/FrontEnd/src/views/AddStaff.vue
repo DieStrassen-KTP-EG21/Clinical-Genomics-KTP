@@ -89,6 +89,10 @@
 
 <script>
 import HomeNavigation from "@/components/HomeNavigationBar.vue";
+import axios from "axios";
+
+const API = "https://genomicanalyzer.herokuapp.com/login";
+
 export default {
   name: "AddStaff",
   components: {
@@ -118,8 +122,17 @@ export default {
         Address: this.Address,
         Phone: this.Phone,
       };
-      e.preventDefault();
       console.log(newMember);
+      e.preventDefault();
+      axios.post(API, {
+        Name: this.Name,
+        Password: this.Password,
+        Gender: this.Gender,
+        Email: this.Email,
+        EmployeeType: this.EmployeeType,
+        Address: this.Address,
+        Phone: this.Phone,
+      });
       this.Name = "";
       this.ID = "";
       this.Password = "";

@@ -7,6 +7,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "normalize.css";
 import Vuelidate from "vuelidate";
 import axios from "axios";
+import ElementUI from 'element-ui';
+
+Vue.use(ElementUI)
 
 Vue.config.productionTip = false;
 Vue.use(Vuelidate);
