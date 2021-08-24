@@ -13,7 +13,8 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    env:
+      MY_PATH: Genome Analyzer/API
     steps:
     - uses: actions/checkout@v2
     - name: Set up Python 3.9
@@ -45,5 +46,4 @@ jobs:
         # The Heroku branch name that you would like to deploy to (`master` or `main`).
         heroku_branch: master
         # The subfolder where your built code is sitted, e.g. `dist`.
-        MY_PATH: Genome Analyzer/API
         subfolder: ${MY_PATH}
