@@ -13,7 +13,7 @@ class Report(Resource):
 
 	@authenticate
 	@authenticate_type([DOCTOR])
-	def get(current_user, self):
+	def post(current_user, self):
 		pass
 
 
