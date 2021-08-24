@@ -8,7 +8,7 @@
 				<h3>Login</h3>
 			</div>
 			<div class="card-body">
-				<form>
+				
 					<div class="input-group form-group">
 						<input  v-model="Name" type="text" class="form-control" placeholder="Username">
 						
@@ -22,7 +22,7 @@
 					<div class="form-group">
 						<Button class="btn float-right login_btn" @click="login()">Login</Button>
 					</div>
-				</form>
+				
 			</div>
 		</div>
 	</div>
@@ -49,8 +49,7 @@ export default {
   methods: {
     login() {
       console.log(this.Name);
-      console.log(this.password);
-      console.log(this.type);
+      console.log(this.Password);
       this.trigger_validation = true;
       this.can_submit = true;
       this.req_email;

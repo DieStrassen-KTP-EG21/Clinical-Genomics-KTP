@@ -13,9 +13,11 @@
           <a>Home</a>
         </router-link>
 
-        <router-link to="/Login" tag="li">
+        <router-link to="/Login" tag="li" v-if="isLoggedIn !='success'">
           <a>Login</a>
         </router-link>
+
+        <Button class="btn float-right logout_btn" @click="logout()" v-if="isLoggedIn=='success'">Log out</Button>
 
       </ul>
     </div>
@@ -23,9 +25,21 @@
 </template>
 
 <script>
-
+import { mapGetters } from "vuex";
 export default {
-  name: "HomeNavigation"
+  name: "HomeNavigation",
+    methods: {
+    logout() {
+      console.log("log out");
+          this.$store.dispatch("Authorization/logout");
+        
+    },
+  },
+   computed: {
+    ...mapGetters({
+      isLoggedIn: "Authorization/GetStatus"
+    })
+  }
 };
 </script>
 
@@ -91,5 +105,9 @@ a:hover {
   border-radius: 10px;
   height: 50px;
   margin-top: 20px;
+}
+.logout_btn
+{
+  color:white;
 }
 </style>

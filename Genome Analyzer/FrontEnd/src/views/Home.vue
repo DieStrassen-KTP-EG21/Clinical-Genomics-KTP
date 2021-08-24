@@ -4,15 +4,26 @@
   <div class=" row justify-content-center home px-0 m-0">
       <div class="col-9 headers px-0 m-0">
         <h1> Hospital Mangement System</h1>
-        <h4>Let's help our patients</h4>
+        <h4>Let's help our patients </h4>
+        <h3 v-if="isLoggedIn =='success'">My {{usertype}}</h3>
         <div class="row justify-content-center px-0 m-0">
           <router-link
             class="costum-btn"
             id="signin-btn"
             to="/Login"
             tag="button"
+            v-if="isLoggedIn !='success'"
           >
             Login
+          </router-link>
+          <router-link
+            class="costum-btn"
+            id="signin-btn"
+            to="/Nurse"
+            tag="button"
+            v-if="isLoggedIn =='success'"
+          >
+            Go To My Page
           </router-link>
         </div>
     </div>
@@ -22,12 +33,18 @@
 
 <script>
 import HomeNavigation from "@/components/HomeNavigationBar.vue";
-
+import { mapGetters } from "vuex";
 export default {
   name: "Home",
   components: {
     HomeNavigation
   },
+   computed: {
+    ...mapGetters({
+      isLoggedIn: "Authorization/GetStatus",
+      usertype:"Authorization/usertype",
+    })
+  }
 };
 </script>
 
@@ -98,6 +115,9 @@ background-color: rgb(107, 180, 185);
     text-align: center;
     width: 100%;
   }
+}
+h3{
+  margin-bottom: 15px;
 }
 
 </style>
