@@ -8,8 +8,11 @@ import "normalize.css";
 import Vuelidate from "vuelidate";
 import axios from "axios";
 import ElementUI from 'element-ui';
+import {BootstrapVue, IconsPlugin} from 'bootstrap-vue';
 
 Vue.use(ElementUI)
+Vue.use(BootstrapVue)
+Vue.use(IconsPlugin)
 
 Vue.config.productionTip = false;
 Vue.use(Vuelidate);
