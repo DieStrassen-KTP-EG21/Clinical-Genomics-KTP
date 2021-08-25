@@ -27,6 +27,8 @@ app.config['ACCESS_TOKEN_DURATION'] =  43200             # in seconds
 
 # importing models
 from GA.models.staff import Staff
+from GA.models.patient import Patient
+from GA.models.report import Report
 
 
 # import APIs classes here

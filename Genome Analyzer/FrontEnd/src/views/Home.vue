@@ -5,7 +5,7 @@
       <div class="col-9 headers px-0 m-0">
         <h1> Hospital Mangement System</h1>
         <h4>Let's help our patients </h4>
-        <h3 v-if="isLoggedIn =='success'">My {{usertype}}</h3>
+        <h3 v-if="isLoggedIn =='success'"> Wellcome , My {{usertype}} {{Username}}</h3>
         <div class="row justify-content-center px-0 m-0">
           <router-link
             class="costum-btn"
@@ -19,9 +19,27 @@
           <router-link
             class="costum-btn"
             id="signin-btn"
+            to="/Admin"
+            tag="button"
+            v-if="isLoggedIn =='success' && usertype=='DataManager'"
+          >
+            Go To My Page
+          </router-link>
+                    <router-link
+            class="costum-btn"
+            id="signin-btn"
+            to="/Doctor"
+            tag="button"
+            v-if="isLoggedIn =='success' && usertype=='Doctor'"
+          >
+            Go To My Page
+          </router-link>
+                    <router-link
+            class="costum-btn"
+            id="signin-btn"
             to="/Nurse"
             tag="button"
-            v-if="isLoggedIn =='success'"
+            v-if="isLoggedIn =='success' && usertype=='Nurse'"
           >
             Go To My Page
           </router-link>
@@ -43,6 +61,7 @@ export default {
     ...mapGetters({
       isLoggedIn: "Authorization/GetStatus",
       usertype:"Authorization/usertype",
+      Username:"Authorization/Username"
     })
   }
 };
@@ -56,7 +75,7 @@ export default {
   
   background-repeat: no-repeat;
   width: 100%;
-  height: 700px;
+  height: 673px;
   background-position: center;
   background-size: 100% 100%;
   position:absolute;
