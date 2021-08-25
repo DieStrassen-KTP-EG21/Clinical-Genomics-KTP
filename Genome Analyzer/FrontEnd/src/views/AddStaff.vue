@@ -4,9 +4,8 @@
       <HomeNavigation />
       <div>
         <h1>Add Staff</h1>
-        <form class="row gy-2 gx-3 align-items-center">
+        <form class="row  align-items-center">
           <div class="col-auto">
-            <label class="visually-hidden">Name</label>
             <input
               type="text"
               v-model="Name"
@@ -14,15 +13,25 @@
               id="autoSizingInput"
               placeholder="Name"
             />
-            <label class="visually-hidden">Gender</label>
-            <input
-              type="text"
-              v-model="Gender"
+            <el-select
               class="form-control"
-              id="autoSizingInput"
+              v-model="Gender"
               placeholder="Gender"
-            />
-            <label class="visually-hidden">EmployeeType</label>
+            >
+              <el-option
+                id="opt"
+                class="form-control"
+                label="Male"
+                value="Male"
+              ></el-option>
+              <el-option
+                id="opt"
+                class="form-control"
+                label="Female"
+                value="Female"
+              ></el-option>
+
+            </el-select>
             <input
               type="text"
               v-model="EmployeeType"
@@ -30,9 +39,13 @@
               id="autoSizingInput"
               placeholder="EmployeeType"
             />
-          </div>
-          <div class="col-auto">
-            <label class="visually-hidden">Email</label>
+            <input
+              type="number"
+              v-model="ID"
+              class="form-control"
+              id="autoSizingInput"
+              placeholder="ID"
+            />
             <input
               type="text"
               v-model="Email"
@@ -40,17 +53,13 @@
               id="autoSizingInput"
               placeholder="Email"
             />
-            <label class="visually-hidden">Phone</label>
             <input
               type="number"
               v-model="Phone"
               class="form-control"
               id="autoSizingInput"
               placeholder="Phone"
-            />
-          </div>
-          <div class="col-auto">
-            <label class="visually-hidden">Password</label>
+            /><label class="visually-hidden">Password</label>
             <input
               type="text"
               v-model="Password"
@@ -58,7 +67,6 @@
               id="autoSizingInput"
               placeholder="Password"
             />
-            <label class="visually-hidden">Address</label>
             <input
               type="text"
               v-model="Address"
@@ -66,9 +74,6 @@
               id="autoSizingInput"
               placeholder="Address"
             />
-          </div>
-
-          <div class="col-auto">
             <button @click="AddMember" type="submit" class="btn btn-primary">
               Add
             </button>
@@ -81,7 +86,6 @@
 
 <script>
 import HomeNavigation from "@/components/HomeNavigationBar.vue";
-
 
 export default {
   name: "AddStaff",
@@ -143,4 +147,11 @@ export default {
 .col-auto {
   margin: 20px auto;
 }
+#opt {
+  cursor: pointer;
+}
+button {
+  margin-top: 20px;
+}
+
 </style>

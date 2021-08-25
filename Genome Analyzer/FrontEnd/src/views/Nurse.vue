@@ -6,37 +6,52 @@
         <h1>Upload Patient's Data</h1>
         <form class="row gy-2 gx-3 align-items-center">
           <div class="col-auto">
-            <label class="visually-hidden">Name</label>
             <input
               type="text"
-              v-model="name"
+              v-model="Name"
               class="form-control"
               id="autoSizingInput"
-              placeholder="Patient Name"
+              placeholder="Name"
             />
-          </div>
-          <div class="col-auto">
-            <label class="visually-hidden">ID</label>
+            <el-select
+              class="form-control"
+              v-model="Gender"
+              placeholder="Gender"
+            >
+              <el-option
+                id="opt"
+                class="form-control"
+                label="Male"
+                value="Male"
+              ></el-option>
+              <el-option
+                id="opt"
+                class="form-control"
+                label="Female"
+                value="Female"
+              ></el-option>
+            </el-select>
             <input
               type="number"
-              v-model="ID"
+              v-model="Phone"
               class="form-control"
               id="autoSizingInput"
-              placeholder="ID"
+              placeholder="Phone"
             />
-          </div>
-          <div class="col-auto">
-            <label class="visually-hidden">DNA</label>
             <input
               type="text"
-              v-model="DNA"
+              v-model="Address"
               class="form-control"
               id="autoSizingInput"
-              placeholder="DNA"
+              placeholder="Address"
             />
-          </div>
-
-          <div class="col-auto">
+            <input
+              type="text"
+              v-model="Sequence"
+              class="form-control"
+              id="autoSizingInput"
+              placeholder="Sequence"
+            />
             <button @click="AddPatient" type="submit" class="btn btn-primary">
               Submit
             </button>
@@ -56,23 +71,29 @@ export default {
   },
   data() {
     return {
-      name: "",
-      ID: "",
-      DNA: "",
+      Name: "",
+      Phone: "",
+      Sequence: "",
+      Gender: "",
+      Address: "",
     };
   },
   methods: {
     AddPatient(e) {
       const newPatient = {
-        name: this.name,
-        ID: this.ID,
-        DNA: this.DNA,
+        Name: this.Name,
+        Phone: this.Phone,
+        Sequence: this.Sequence,
+        Gender: this.Gender,
+        Address: this.Address,
       };
       e.preventDefault();
       console.log(newPatient);
-      this.name = "";
-      this.ID = "";
-      this.DNA = "";
+      this.Name = "";
+      this.Phone = "";
+      this.Sequence = "";
+      this.Gender = "";
+      this.Address = "";
     },
   },
 };
@@ -93,9 +114,14 @@ export default {
 .col-auto {
   margin: 20px auto;
 }
-.background
-{
+.background {
   background-color: rgba(139, 138, 138, 0.507);
   border-radius: 20px;
+}
+button {
+  margin-top: 20px;
+}
+#opt {
+  cursor: pointer;
 }
 </style>
