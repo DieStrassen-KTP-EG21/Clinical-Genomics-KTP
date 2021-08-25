@@ -33,7 +33,7 @@ jobs:
         sleep 6
         kill $PID 
   
-  merge to main:
+  mergeToMain:
     needs: [buildAndRun]
     runs-on: ubuntu-latest
     steps:
