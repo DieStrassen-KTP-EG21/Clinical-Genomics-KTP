@@ -4,15 +4,23 @@
       <HomeNavigation />
 
       <div>
-        <b-table :items="items" :fields="fields" striped responsive="sm">
+        <b-table
+      
+          :items="items"
+          :fields="fields"
+          striped
+          responsive="sm"
+        >
           <template #cell(actions)="row">
             <b-button size="sm" @click="row.toggleDetails" class="mr-2">
               {{ row.detailsShowing ? "Hide" : "Show" }} Details
             </b-button>
             <b-button
+                v-for="(index) in items"
+          :key="index.ID"
               variant="danger"
               size="sm"
-              @click="deletePatient"
+              @click="deletePatient(index)"
               class="mr-2"
             >
               Delete
@@ -46,11 +54,11 @@
                 <b-col sm="3" class="text-sm-right"><b>Gender:</b></b-col>
                 <b-col>{{ row.item.Gender }}</b-col>
               </b-row>
-                            <b-row class="mb-2">
+              <b-row class="mb-2">
                 <b-col sm="3" class="text-sm-right"><b>Address:</b></b-col>
                 <b-col>{{ row.item.Address }}</b-col>
               </b-row>
-                            <b-row class="mb-2">
+              <b-row class="mb-2">
                 <b-col sm="3" class="text-sm-right"><b>Sequence:</b></b-col>
                 <b-col>{{ row.item.Sequence }}</b-col>
               </b-row>
@@ -114,7 +122,14 @@ export default {
           Sequence: "ATCGGAGC",
         },
       ],
+
     };
+  },
+  methods: {
+    deletePatient: function(idx) {
+
+      this.items.splice(idx, 1);
+    },
   },
 };
 </script>
