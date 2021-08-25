@@ -1,23 +1,39 @@
 from re import fullmatch
-from Bio import SeqIO
-from Bio import pairwise2
+from Bio import SeqIO,pairwise2,Align
 from Bio.pairwise2 import format_alignment
 from Bio.Seq import Seq
 from Bio.SeqRecord import SeqRecord
 
-#Test inputs
-a = Seq("AGCTAACTGATGCAGTCGATGCTAGTGCTGAGTCGTAGCATGCCTAGCTGACTGACGTATGCAGTCATGC")
-b = Seq("CCTGATATGTACTGATCATCCAGTTAGCATGCTGATGCTAGTCATGCGTAGTAGTCACTACGGGGTGACT")
-c = Seq("CGTACGTACGTAGTCGTAGCTAGTCGTACGTAGTCATGCTAGCGTATGCATGCGTACTGAGTCATGTGCTC")
-d = Seq("CGTATGCAGTCGTAGTCAGTCTGATGCTAGCGTACGTAGTCATGTCGTGCTGAGTCTGATGCATGCTGACAGT")
-e = Seq("CATGCGTATGCGTGATGCTACGTATGCATGCTGACTGATGCATGCTGACTGAGTCTGACTGATGCATGCATG")
-f = Seq("ACGTTGATGCAGTCAGTCGTACTGAGTCATGCTGATGCTGATGCAGTCTGAGTCAGTCGTAGTCATG")
+AllRecs=[]
+file_names=["alenquer.gbk","dabiebandavirus.gbk","ebolavirus.gbk","influenza-a.gbk","hiv.gbk"]
 
-recs=[b,c,d,e,f]
+for file in file_names:
+    for sq in SeqIO.parse("disease_sequences/"+file,"genbank"):
+        AllRecs.append(sq)
 
-def compare(patientDna,storedData):
+AllRecs[0].description="Alenquer virus"
+AllRecs[1].description="Severe fever with thrombocytopenia syndrome virus"
+AllRecs[2].description="Zaire ebolavirus"
+AllRecs[3].description="Influenza A virus"
+AllRecs[4].description="Human immunodeficiency virus 1 (HIV-1)"
+
+
+aligner = Align.PairwiseAligner()
+aligner.match_score=1.0
+
+
+def compare(patientDna,storedData,resultDisease):
+    scores=[]
+    lastm=None
     for rec in storedData:
-        result=pairwise2.align.globalxx(patientDna,rec)
-        print(format_alignment(*result[0] ,full_sequences=True))
+        result=pairwise2.align.globalxx(patientDna,rec.seq)
+        # print(rec.description)
+        # print(format_alignment(*result[0], full_sequences=True))
+        scores.append(aligner.score(patientDna,rec.seq))
+        # print(aligner.score(patientDna,rec.seq))
+        m=max(scores)
+        if(lastm!=m):
+            resultDisease=rec.description
+        lastm=m
 
-compare(a,recs)
+
