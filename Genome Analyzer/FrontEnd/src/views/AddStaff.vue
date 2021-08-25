@@ -32,20 +32,31 @@
               ></el-option>
 
             </el-select>
-            <input
-              type="text"
+          <el-select
+              class="form-control"
               v-model="EmployeeType"
-              class="form-control"
-              id="autoSizingInput"
               placeholder="EmployeeType"
-            />
-            <input
-              type="number"
-              v-model="ID"
-              class="form-control"
-              id="autoSizingInput"
-              placeholder="ID"
-            />
+            >
+              <el-option
+                id="opt"
+                class="form-control"
+                label="DataManager"
+                value="DataManager"
+              ></el-option>
+              <el-option
+                id="opt"
+                class="form-control"
+                label="Doctor"
+                value="Doctor"
+              ></el-option>
+               <el-option
+                id="opt"
+                class="form-control"
+                label="Nurse"
+                value="Nurse"
+              ></el-option>
+
+            </el-select>
             <input
               type="text"
               v-model="Email"
@@ -81,12 +92,13 @@
         </form>
       </div>
     </div>
+    <p> hhhh{{msg}}</p>
   </div>
 </template>
 
 <script>
 import HomeNavigation from "@/components/HomeNavigationBar.vue";
-
+import { mapGetters } from "vuex";
 export default {
   name: "AddStaff",
   components: {
@@ -95,7 +107,6 @@ export default {
   data() {
     return {
       Name: "",
-      ID: "",
       Password: "",
       Gender: "",
       Email: "",
@@ -116,10 +127,9 @@ export default {
         Phone: this.Phone,
       };
       console.log(newMember);
-      this.$store.dispatch("Authorization/addstaff", newMember);
+      this.$store.dispatch("Staff/addstaff", newMember);
       e.preventDefault();
       this.Name = "";
-      this.ID = "";
       this.Password = "";
       this.Gender = "";
       this.Email = "";
@@ -128,21 +138,18 @@ export default {
       this.Phone = "";
     },
   },
+   computed: {
+    ...mapGetters({
+      msg: "Staff/msg"
+    })
+  }
 };
 </script>
 
 <style scoped>
 .cont {
-  height: calc(200vh);
+  height: 750px;
   background-color: rgb(133, 167, 187);
-}
-.home {
-  background-repeat: no-repeat;
-  height: calc(70vh);
-  width: 100%;
-  background-position: center;
-  background-size: 100% 100%;
-  position: absolute;
 }
 .col-auto {
   margin: 20px auto;
@@ -152,6 +159,14 @@ export default {
 }
 button {
   margin-top: 20px;
+}
+input,.form-control
+{
+  margin-bottom: 10px;
+}
+#opt
+{
+  margin-bottom: 0px;
 }
 
 </style>
