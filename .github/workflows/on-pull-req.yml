@@ -4,9 +4,9 @@
 name: Python application
 
 on:
-  push:
+  pull_request:
     branches: [ backend ]
-    
+
 jobs:
   buildAndRun:
     runs-on: ubuntu-latest
@@ -32,24 +32,3 @@ jobs:
         PID=$!
         sleep 6
         kill $PID       
-        
-  deploy:
-    needs: [buildAndRun]
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Git deploy to Heroku
-      # You may pin to the exact commit or the version.
-      # uses: onekiloparsec/heroku-node-deploy-subfolder@85d5701f800be8126e12b7f6f47e965c71f67b56
-      uses: onekiloparsec/heroku-node-deploy-subfolder@v1.1.0
-      with:
-        # Your Heroku API key. This will be used for authentication. You can find it in your Heroku account settings
-        api_key: 817ea5ed-cca2-4b1c-85e9-58e17f627e6e
-        # The email of your Heroku account (needed for auth).
-        email: mindenslavement@gmail.com
-        # The app name to use for deploying/updating
-        app_name: genomicanalyzer
-        # The Heroku branch name that you would like to deploy to (`master` or `main`).
-        heroku_branch: master
-        # The subfolder where your built code is sitted, e.g. `dist`.
-        subfolder: "'Genome Analyzer'/API"
