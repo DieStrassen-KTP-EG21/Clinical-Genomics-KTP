@@ -156,6 +156,7 @@ export default {
 }
 #opt {
   cursor: pointer;
+   margin-bottom: 0px;
 }
 button {
   margin-top: 20px;
@@ -163,10 +164,6 @@ button {
 input,.form-control
 {
   margin-bottom: 10px;
-}
-#opt
-{
-  margin-bottom: 0px;
 }
 
 </style>
