@@ -1,0 +1,416 @@
+LOCUS       NC_043450               6255 bp    RNA     linear   VRL 28-JUN-2019
+DEFINITION  Severe fever with thrombocytopenia syndrome virus strain HNXH
+            segment L, complete sequence.
+ACCESSION   NC_043450
+VERSION     NC_043450.1
+DBLINK      BioProject: PRJNA485481
+KEYWORDS    RefSeq.
+SOURCE      Severe fever with thrombocytopenia syndrome virus
+  ORGANISM  Severe fever with thrombocytopenia syndrome virus
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Polyploviricotina; Ellioviricetes; Bunyavirales; Phenuiviridae;
+            Bandavirus; Dabie bandavirus.
+REFERENCE   1  (bases 1 to 6255)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (28-JUN-2019) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to KT254588.
+            GenBank Accession Numbers KT254588-KT254590 represent sequences
+            from the 3 segments of Severe fever with thrombocytopenia syndrome
+            virus strain HNXH.
+            
+            ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..6255
+                     /organism="Severe fever with thrombocytopenia syndrome
+                     virus"
+                     /mol_type="genomic RNA"
+                     /strain="HNXH"
+                     /isolation_source="serum"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:1003835"
+                     /segment="L"
+                     /country="China"
+                     /collection_date="11-Oct-2014"
+     gene            1..6255
+                     /locus_tag="FLA12_sLgp1"
+                     /db_xref="GeneID:40526338"
+     CDS             1..6255
+                     /locus_tag="FLA12_sLgp1"
+                     /codon_start=1
+                     /product="RNA polymerase"
+                     /protein_id="YP_009666133.1"
+                     /db_xref="GeneID:40526338"
+                     /translation="MNLEVLCGRINVENGLSLGEPGLYDQIYDRPGLPDLDVTVDATG
+                     VTVDIGAVPDSASQLGSSINAGLITIQLSEAYKINHDFTFSGLSKATDRRLSEVFPIT
+                     HDGSDGMTPDVIHTRLDGTIVVVEFTTTRSHNIGGLEAAYRTKIEKYRDPISRRVDIM
+                     ENPRVFFGVIVVSSGGVLSNMPLTQDEAEELMYRFCIANEIYTKARSMDADIELQKSE
+                     EELEAISRALSFFSLFEPNIERVEGTFPNSEIEMLEQFLSTPADVDFITKTLKAKEVE
+                     AYADLCDSHYLKPEKTIQERLEINRCEAIDKTQDLLAGLHARSNKQTSLNRGTVKLPP
+                     WLPKPSSESIDIKTDSGFGSLMDHGAYGELWAKCLLDVSLGNVEGVVSDPAKELDIAI
+                     SDDPEKDTPKEAKITYRRFKPALSSSARQEFSLQGVEGKKWKRMAANQKKEKESHEAL
+                     SPFLDVEDIGDFLTFNNLLADSRYGDESVQRAVSILLEKASAMQDTELTHALNDSFKR
+                     NLSSNVVQWSLWVSCLAQELASALKQHCRAGEFIIKKLKFWPIYVIIKPTKSSSHIFY
+                     SLGIRKADVTRRLTGRVFSETIDAGEWELTEFKSLKTCKLTNLVNLPCTMLNSIAFWR
+                     EKLGVAPWLVRKPCSELREQVGLTFLISLEDKSKTEEIITLTRYTQMEGFVSPPMLPK
+                     PQKMLGKLDGPLRTKLQVYLLRKHLDCMVRIASQPFSLIPREGRVEWGGTFHAISGRS
+                     TNLENMVNSWYIGYYKNKEESTELNALGEMYKKIVEMEEDKPSSPEFLGWGDTDSPKK
+                     HEFSRSFLRAACSSLEREIAQRHGRQWKQNLEERVLREIGTKNILDLASMKATSNFSK
+                     DWELYSEVQTKEYHRSKLLEKMATLIEKGVMWYIDAVGQAWKAVLDDGCMRICLFKKN
+                     QHGGLREIYVMDANARLVQFGVETMARCVCELSPHETVANPRLKNSIIENHGLKSARS
+                     LGPGSININSSNDAKKWNQGHYTTKLALVLCWFMPAKFHRFIWAAISMFRRKKMMVDL
+                     RFLAHLSSKSESRSSDPFREAMTDAFHGNREVSWMDKGRTYIKTETGMMQGILHFTSS
+                     LLHSCVQSFYKSYFVSKLKEGYMGESISGVVDVIEGSDDSAIMISIRPKSDMDEVRSR
+                     FFVANLLHSVKFLNPLFGIYSSEKSTVNTVYCVEYNSEFHFHRHLVRPTLRWIAASHQ
+                     ISETEALASRQEDYSNLLTQCLEGGASFSLTYLIQCAQLLHHYMLLGLCLHPLFGTFM
+                     GMLISDPDPALGFFLMDNPAFAGGAGFRFNLWRACKTTDLGRKYAYYFNEIQGKTKGD
+                     EDYRALDATSGGTLSHSVMVYWGDRKKYQALLNRMGLPEDWVEQIDENPGVLYRRAAN
+                     KKELLLKLAEKVHSPGVTSSLSKGHVVPRVVAAGVYLLSRHCFRFSSSIHGRGSTQKA
+                     SLIKLLMMSSISAMKHGGSLNPNQERMLFPQAQEYDRVCTLLEEVEHLTGKFVVRERN
+                     IVRSRIDLFQEPVDLRCKAEDLVSEVWFGLKRTKLGPRLLKEEWDKLRASFAWLSTDP
+                     SETLRDGPFLSHVQFRNFIAHVDAKSRSVRLLGAPVKKSGGVTTISQVVRMNFFPGFS
+                     LEAEKSLDNQERLESISILKHVLFMVLNGPYTEEYKLEMIIEAFSTLVIPQPSEVIRK
+                     SRTMTLCLLSNYLSSRGGSILDQIERAQSGTLGGFSKPQKTFIRPGGGVGYKGKGVWT
+                     GVMEDTHVQILIDGDGTSNWLEEIRLSSDARLYDVIESIRRLCDDLGINNRVASAYRG
+                     HCMVRLSGFKIKPASRTDGCPVRIMERGFRIRELQNPDEVKMRVRGDILNLSVTIQEG
+                     RVMNILSYRPRDTDISESAAAYLWSNRDLFSFGKKEPSCSWICLKTLDNWAWSHASVL
+                     LANDRKTQGIDNRAMGNIFRDCLEGSLRKQGLMRSKLTEMVEKNVVPLTTQELVDILE
+                     EDIDFSDVIAVELSEGSLDIESIFDGAPILWSAEVEEFGEGVVAVSYSSKYYHLTLMD
+                     QAAITMCAIMGKEGCRGLLTEKRCMAAIREQVRPFLIFLQIPEDSISWVSDQFCDSRG
+                     LDEESTIMWG"
+ORIGIN      
+        1 atgaacttgg aagtgctttg tggtaggata aacgtggaga atgggctgtc tcttggagaa
+       61 ccaggcctgt acgaccaaat ctacgacagg cctgggctac cagacctaga tgtgactgtc
+      121 gatgccacag gtgtgacagt ggacataggg gctgtgccgg actcagcatc acaactgggt
+      181 tcatcaatca atgctgggtt gatcacaatc cagctctctg aagcatataa gatcaatcat
+      241 gacttcacgt tctctggcct gtcaaaggca acagatcgac gcctctcaga ggtgttcccc
+      301 atcacccatg atggttctga tgggatgacc cctgatgtga ttcacaccag attggatggg
+      361 accattgtgg tggttgaatt tacaaccact aggagccata acattggggg cctggaggca
+      421 gcatatagga caaagataga aaaatatagg gacccaatct caaggcgtgt tgacatcatg
+      481 gagaacccaa gggtcttctt tggcgttatt gtagtctcgt caggaggggt tctgtccaac
+      541 atgcccttga ctcaggatga ggcagaggag ctcatgtaca ggttttgcat tgccaatgag
+      601 atctacacca aggctcgatc tatggatgca gacattgagc tacagaagag tgaggaagag
+      661 cttgaggcta ttagcagggc actatcattc ttcagtttgt ttgagcctaa cattgaaaga
+      721 gtagaaggaa cattccctaa ttcagaaatc gagatgctag aacaatttct ctcaacacca
+      781 gctgatgttg acttcatcac caagaccctc aaagcaaaag aggtagaggc ctatgctgat
+      841 ctttgtgaca gccactacct aaagcctgaa aaaaccattc aggagcggct agagatcaat
+      901 agatgtgagg ccattgacaa aactcaggac ctcctagctg gtctgcatgc aaggagcaac
+      961 aagcaaacat cattgaatcg agggacagtc aaactcccgc cctggctacc aaagccttca
+     1021 agtgagtcaa tagacatcaa gaccgactca ggctttggtt ccttaatgga tcatggcgca
+     1081 tatggtgagc tgtgggcaaa gtgccttcta gatgtctcgc tgggcaatgt ggagggggta
+     1141 gtcagtgacc ctgcaaaaga acttgacatt gccatctctg atgatccaga aaaagacacc
+     1201 cccaaagagg caaagataac ctataggcga ttcaagcctg ccttaagttc aagtgcccgt
+     1261 caagaatttt ctctccaagg agtggagggg aagaagtgga agagaatggc agcaaaccag
+     1321 aagaaagaga aggagtcaca tgaggcattg agccctttct tggatgttga agacatcggg
+     1381 gatttcctaa cattcaacaa tcttcttgca gattcgaggt atggagatga gtccgtccag
+     1441 agagcagtgt caatcttgtt ggaaaaggca tctgccatgc aagacacaga gctcactcat
+     1501 gccctcaacg attcattcaa gaggaaccta agcagtaatg tggttcagtg gtccctttgg
+     1561 gtctcctgct tagcacagga gctagctagt gctctgaagc agcactgcag ggctggtgag
+     1621 ttcatcatca agaagctgaa attctggcct atctatgtca ttatcaagcc gaccaaatca
+     1681 tcatcccata tcttctacag cttggggatc cgcaaggctg acgtgacaag gaggctcact
+     1741 ggcagagtct tctctgaaac cattgatgct ggggaatggg agctaacaga gttcaaaagc
+     1801 ctgaagacat gcaagcttac aaaccttgtc aacttgccat gcaccatgct gaactcaata
+     1861 gctttctgga gagagaagct gggcgtggct ccatggctgg ttcgaaaacc ttgttcagag
+     1921 ctcagggagc aggtgggcct gaccttcctg atcagtctgg aggacaagtc taagactgag
+     1981 gagatcatca ccttgacaag atacacccag atggagggct ttgtctctcc ccccatgcta
+     2041 cctaagcccc aaaagatgct agggaaactg gatggacctc tgagaactaa gctacaggta
+     2101 tacctcctca ggaagcatct ggattgcatg gtgcgaattg cttctcagcc attcagccta
+     2161 atccctagag aggggagggt agaatgggga ggaacattcc atgccatctc aggccggtcc
+     2221 acaaaccttg agaatatggt gaacagctgg tacattgggt actacaagaa caaagaggag
+     2281 tcaacggagc taaatgccct cggagaaatg tataagaaga tcgtggagat ggaagaggac
+     2341 aagcccagca gccctgagtt tctagggtgg ggggacactg attcccctaa gaagcatgaa
+     2401 ttctcacgga gcttcctcag agctgcttgc tcatctctgg agagagaaat tgctcagcga
+     2461 cacggaagac aatggaagca gaaccttgag gagcgtgtcc tgagagagat tgggaccaag
+     2521 aacattctgg accttgcatc catgaaggcc acaagcaact tttccaaaga ctgggagctc
+     2581 tactcagaag tccagaccaa agagtaccat aggtccaaac tgttggagaa gatggccaca
+     2641 ttgattgaga aaggggtcat gtggtacatt gatgctgtag gccaggcatg gaaggcagtt
+     2701 ctagatgatg ggtgcatgcg aatctgtctc ttcaagaaga atcagcatgg tggcctcaga
+     2761 gagatctacg ttatggatgc gaatgcccga cttgtgcagt ttggggttga gaccatggct
+     2821 aggtgtgtct gtgagctgag cccacatgag actgttgcca accctaggct caagaattcc
+     2881 atcatagaga accatgggct gaagtcagcc cgtagtcttg gccctggctc tataaacata
+     2941 aactcatcca atgacgccaa gaagtggaat caggggcact acacaacaaa gctagctcta
+     3001 gttctttgtt ggttcatgcc agccaaattc cacagattca tttgggctgc catttccatg
+     3061 tttcggagaa aaaagatgat ggtggaccta aggtttttag ctcacctcag ttctaaatct
+     3121 gagtctaggt catctgatcc atttagggaa gcaatgacag acgccttcca tggtaatagg
+     3181 gaagtctcat ggatggacaa aggccgaact tacataaaga cagagacagg gatgatgcag
+     3241 ggcatactgc acttcacatc cagtctcctc cactcttgtg ttcagagctt ttacaagtct
+     3301 tatttcgtct caaagctcaa agagggctac atgggggaaa gcatcagtgg ggtggtggac
+     3361 gtcatagaag gttctgacga ctctgcgatc atgatcagca tacgccctaa gtcagacatg
+     3421 gatgaagtcc gatcaaggtt ctttgttgct aacttactcc actctgtcaa gttcttaaac
+     3481 cccttgtttg ggatttattc atcagagaaa tcaacagtga acacagtata ttgtgtcgag
+     3541 tataactctg aattccattt ccacaggcac ttggttagac ccacactgag atggatagca
+     3601 gcgtctcacc aaatctcaga gactgaagcc cttgcaagca ggcaagagga ttactctaac
+     3661 cttctgaccc agtgcttgga agggggggcc tcattctctc ttacctacct catacagtgc
+     3721 gctcagctcc tacaccacta catgcttcta ggactatgct tacatccctt gtttggaacc
+     3781 ttcatgggga tgctgatatc agacccagat ccagccctag ggttcttcct catggacaac
+     3841 cctgcattcg cagggggagc aggatttaga ttcaatctgt ggagagcctg caagacaaca
+     3901 gaccttgggc ggaagtatgc atattatttc aatgagatac agggtaaaac aaagggagat
+     3961 gaggactaca gggctctgga cgccacatcg ggaggaactc tcagccactc tgttatggtg
+     4021 tactgggggg acaggaagaa gtatcaggcc ttattgaaca ggatgggcct tcctgaagac
+     4081 tgggtggagc agatagatga gaatcctgga gtcctttaca ggagagctgc caacaagaag
+     4141 gaactgctct taaagctggc agagaaggtt cattcacctg gtgtgactag cagcctgagt
+     4201 aaagggcatg tggtgcctcg ggtggtggca gcaggagtat acctcctctc acgtcactgc
+     4261 tttcgcttta gttcaagcat ccatggcagg ggctcaacac agaaggctag ccttataaaa
+     4321 ctgttgatga tgtcttctat ttctgccatg aagcacgggg gctcactaaa ccctaatcag
+     4381 gagcgaatgc tcttccctca ggctcaggag tatgacaggg tatgcacatt gcttgaggaa
+     4441 gttgaacacc taacagggaa atttgttgtt agggagagga acattgtcag gagccgcata
+     4501 gacctgttcc aagagccagt ggacttgcgg tgcaaggcag aagatctggt gtctgaggtg
+     4561 tggtttggcc tgaaaaggac aaagcttggg ccccgtctcc tcaaggagga gtgggacaaa
+     4621 cttagggcct catttgcatg gttgagcaca gacccatctg aaacattgag ggatggtcct
+     4681 tttcttagcc atgtgcagtt taggaacttc atagcccacg ttgatgctaa atcaagatca
+     4741 gtcaggctcc taggtgcccc cgtgaagaaa tcaggcgggg tcaccactat aagccaagta
+     4801 gtcagaatga acttcttccc aggttttagc ctagaagctg agaagagctt agacaaccag
+     4861 gaaagactag agagcatctc catcctcaag catgttttgt tcatggtctt gaatggccca
+     4921 tacactgagg agtacaagct ggaaatgatc atagaggcct tctctactct agtgatacca
+     4981 cagccatcag aggtcatcag gaaatcaagg accatgactt tatgcctttt atcgaattac
+     5041 ttgtctagta ggggtgggtc cattctagac cagattgaga gggcacagtc aggcactcta
+     5101 ggaggattca gcaagcccca gaagacattc attaggccag gaggtggtgt tggctacaag
+     5161 ggaaaaggtg tgtggactgg agtgatggag gacacccatg tccaaattct gatagatgga
+     5221 gatgggacta gtaactggct tgaggagatc aggctcagta gtgatgccag gctttatgat
+     5281 gtcattgaat ccatccgaag gttatgtgat gaccttggga tcaacaacag ggtagcatct
+     5341 gcatatagag gtcattgcat ggtcaggctg agtggattca agatcaagcc agcatcaagg
+     5401 actgacggct gtccagtcag gattatggaa aggggcttca ggattaggga actccaaaac
+     5461 ccagatgagg tcaagatgag agtgaggggc gacatcctta acctctctgt caccatacaa
+     5521 gaaggaaggg tcatgaacat tctaagctac aggccgagag acactgacat atcagagtca
+     5581 gccgccgcat acctctggag caatcgagac ctcttctcct ttgggaagaa ggagccatcc
+     5641 tgcagctgga tctgtttgaa aactcttgac aattgggcct ggtcacatgc ctcagttctc
+     5701 ctggcaaatg ataggaagac ccaaggcatt gacaatagag ctatggggaa catcttcagg
+     5761 gactgtctcg agggttctct aagaaagcaa gggctgatga ggtcaaagct cacagagatg
+     5821 gttgagaaga atgtagttcc tttaacaact caagagcttg tcgacatact agaggaggac
+     5881 attgactttt cagatgtcat agctgtagag ctctcagagg gatcacttga tattgaatcc
+     5941 atctttgatg gagcacctat cttgtggtct gctgaggtgg aagagtttgg agaaggagtg
+     6001 gtggctgtga gctattccag taagtactat catctaaccc tgatggacca agctgccatc
+     6061 acaatgtgtg caatcatggg taaggaagga tgtagagggc tccttactga gaagagatgc
+     6121 atggcagcca tacgagagca ggtacggcca ttcctcatat tcctgcaaat tcctgaagac
+     6181 agcatttctt gggtatctga tcagttctgc gactccaggg gtcttgatga agagagcacc
+     6241 attatgtggg gttaa
+//
+LOCUS       NC_043451               3336 bp    RNA     linear   VRL 28-JUN-2019
+DEFINITION  Severe fever with thrombocytopenia syndrome virus strain HNXH
+            segment M, complete sequence.
+ACCESSION   NC_043451
+VERSION     NC_043451.1
+DBLINK      BioProject: PRJNA485481
+KEYWORDS    RefSeq.
+SOURCE      Severe fever with thrombocytopenia syndrome virus
+  ORGANISM  Severe fever with thrombocytopenia syndrome virus
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Polyploviricotina; Ellioviricetes; Bunyavirales; Phenuiviridae;
+            Bandavirus; Dabie bandavirus.
+REFERENCE   1  (bases 1 to 3336)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (28-JUN-2019) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to KT254590.
+            GenBank Accession Numbers KT254588-KT254590 represent sequences
+            from the 3 segments of Severe fever with thrombocytopenia syndrome
+            virus strain HNXH.
+            
+            ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..3336
+                     /organism="Severe fever with thrombocytopenia syndrome
+                     virus"
+                     /mol_type="genomic RNA"
+                     /strain="HNXH"
+                     /isolation_source="serum"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:1003835"
+                     /segment="M"
+                     /country="China"
+                     /collection_date="11-Oct-2014"
+     gene            1..3222
+                     /locus_tag="FLA12_sMgp1"
+                     /db_xref="GeneID:40526340"
+     CDS             1..3222
+                     /locus_tag="FLA12_sMgp1"
+                     /codon_start=1
+                     /product="membrane glycoprotein polyprotein"
+                     /protein_id="YP_009666134.1"
+                     /db_xref="GeneID:40526340"
+                     /translation="MMKVIWFSSLICLVIQCGGDTGPIICAGPIHSNKSADIPHLLGY
+                     SEKICQIDRLIHVSSWLRNHSQFQGYVGQRGGRSQVSYYPAENSYSRWSGLLSPCDAD
+                     WLGMLVVKKAKGSDMIVPGPSYKGKVFFERPTFDGYVGWGCGSGKSRTESGELCSSDS
+                     GTSSGLLPSDRVLWIGDVACQPMTPIPEETFLELKSFSQSEFPDICKIDGIVFNQCEG
+                     ESLPQPFDVAWMDVGHSHKIIMREHKTKWVQESSSKDFVCYKEGTGPCSESEEKTCKT
+                     SGSCRGDMQFCKVAGCEHGEEASEAKCRCSLVHKPGEVVVSYGGMRVRPKCYGFSRMM
+                     ATLEVSQPEQRIGQCTGCHLECINGGVRLITLTSELKSATVCASHFCSSATSGKKSTE
+                     IQFHSGSLVGKTAIHVKGALVDGTEFTFEGSCMFPDGCDAVDCTFCREFLKNPQCYPA
+                     KKWLFIIIVILLGYAGLMLLTNVLKAIGVWGSWVIAPVKLVFALIKKLMRAVSCLMGK
+                     LMDRGRQVIHEEIGENREGNQDDVRIEMARPRRVRHWMYSPVILTILAIGLAEGCDEM
+                     VHADSKLVSCRQGSGNMKECVTTGRALLPAVNPGQEACLHFTAPGSPDSKCLKIKVKR
+                     INLKCKKSSSYFVPDARSRCTSVRRCRWAGDCQSGCPPHFTSNSFSDDWAGKMDRAGL
+                     GFSGCSDGCGGAACGCFNAAPSCIFWRKWVENPHGIIWKVSPCAAWVPSAVIELTMPS
+                     GEVRTFHPMSGIPTQVFKGVSVTYLGSDMEVSGLTDLCEIEELKSKKLALAPCNQAGM
+                     GVVGKVGEIQCSSEESARTIKKDGCIWNADLVGIELRVDDAVCYSKITSVEAVANYSA
+                     IPTTIGGLRFERSHDSQGKISGSPLDITAIRGSFSVNYRGLRLSLSEITATCTGEVTN
+                     VSGCYSCMTGAKVSIKLHSSKNSTAHVRCKGDETAFSVLEGVHSYSVSLSFDHAVVDE
+                     QCQLNCGGHESQVTLRGNLIFLDVPKFVDGSYMQTYHSTVPTGANIPSPTDWLNALFG
+                     NGLSRWILGVTGVLLGGLALFFLIMSLFKLGTKQIFRSRTKLA"
+ORIGIN      
+        1 atgatgaaag tcatctggtt ctcctctctg atctgcttag tcattcaatg cggtggggat
+       61 acgggcccaa tcatctgcgc aggacccatc cactcaaaca agagtgctga cataccccac
+      121 ctgcttggct actctgagaa gatttgtcag atagatcggc tgatacatgt ttcgtcttgg
+      181 cttagaaacc actcacaatt tcagggctac gtagggcagc gaggcggacg ctctcaggtg
+      241 agctactacc cagctgaaaa ttcttactca aggtggagtg ggcttctaag cccctgtgat
+      301 gctgattggc ttgggatgct tgtcgtgaag aaggccaagg ggtctgatat gatagttcct
+      361 gggccttcat acaaggggaa agtctttttt gaacggccaa cttttgatgg atacgtaggc
+      421 tggggctgtg gtagtgggaa gtctaggact gagtcaggtg agctctgcag ttcagactcg
+      481 gggactagtt ctggtcttct gccctcggat agggttctct ggataggtga tgttgcttgt
+      541 cagccaatga cacccatccc tgaggagaca tttctggagc tgaagagctt tagccaaagt
+      601 gaattcccag acatatgcaa aattgatggc attgtgttca accagtgtga gggtgagagt
+      661 ctaccccagc cctttgatgt tgcatggatg gatgttggcc actctcataa aatcatcatg
+      721 agggagcaca agaccaaatg ggtacaagag agctcatcca aggattttgt gtgctataag
+      781 gaagggactg ggccgtgttc tgaatcagaa gaaaagactt gcaagaccag tggatcatgc
+      841 aggggggaca tgcagttttg caaggtggca ggttgtgaac atggggaaga ggcatccgaa
+      901 gccaagtgta gatgctcact tgtgcacaag ccaggggaag tcgttgtgtc atatggaggg
+      961 atgcgtgtca gaccaaagtg ctatggtttc tccagaatga tggcaacact ggaggtgagc
+     1021 cagccagagc aaaggattgg tcaatgcact ggctgccatc tagaatgcat aaatgggggt
+     1081 gtgaggctaa tcactctaac cagtgagctc aagtcagcta ctgtctgcgc ttctcacttt
+     1141 tgcagttctg ccacaagtgg taagaaaagc acggagattc aattccactc aggatcattg
+     1201 gttggaaaaa cagcaatcca cgtcaaaggg gcattggtag atggaactga attcacattt
+     1261 gagggtagtt gcatgttccc agatggttgt gatgcagtgg actgcacatt ctgtcgtgag
+     1321 tttctaaaaa atccccagtg ctaccctgca aagaagtggc tgttcatcat tattgtcatc
+     1381 ctccttggat atgcaggcct catgctgctc accaatgttc ttaaggcaat tggggtttgg
+     1441 gggtcatggg tcatagctcc agtgaagcta gtgtttgccc tcataaagaa actgatgaga
+     1501 gctgtgagct gcctgatggg gaaattgatg gataggggaa ggcaagtgat ccatgaggaa
+     1561 ataggggaaa atagagaggg caaccaagat gatgttagga ttgagatggc cagacccagg
+     1621 agggtaaggc attggatgta ctcgcctgtc atcctgacta ttctagcaat agggcttgct
+     1681 gagggctgtg atgagatggt ccatgctgat tctaaacttg tttcgtgcag gcaagggagc
+     1741 ggaaatatga aggaatgtgt tacaactggg agggcgcttc ttcctgcggt gaacccaggg
+     1801 caagaggcgt gtctgcactt cacggcacct ggaagtccgg actcaaaatg tctcaaaatt
+     1861 aaggttaaga ggatcaacct aaaatgtaaa aagtcatcat catattttgt tcctgatgcc
+     1921 cggtccaggt gtacatcagt gaggagatgt cgttgggcag gggactgcca gtctgggtgc
+     1981 ccccctcatt tcacatccaa ctccttttct gatgattggg caggtaagat ggacagggct
+     2041 ggtctagggt tcagtggctg ctctgatgga tgtggaggag cagcctgcgg ttgctttaat
+     2101 gcggcccctt catgcatttt ctggaggaaa tgggtagaga atccacatgg gatcatctgg
+     2161 aaagtatccc catgtgccgc atgggtccca tcagcggtta tagagctaac aatgccctca
+     2221 ggggaggtga ggacattcca ccccatgagc ggaatcccca cacaagtctt caagggtgtg
+     2281 agtgtaactt acttgggctc agatatggag gtgtcaggct tgactgatct gtgtgagata
+     2341 gaagagctca agtcaaagaa gcttgcatta gctccctgca accaggctgg tatgggggtt
+     2401 gtaggcaagg ttggagagat acagtgcagt agcgaggaaa gtgcccgtac cataaaaaaa
+     2461 gatgggtgca tatggaatgc tgacctagtg ggtatagagc tacgggtgga tgacgctgtg
+     2521 tgctactcta agatcactag tgtggaggca gttgcaaact actccgccat acccaccact
+     2581 attggggggc tgaggtttga gagaagccat gacagccagg gtaaaatatc tggtagcccc
+     2641 ctggacatca cagctataag aggatctttt tctgtcaatt atagaggcct tcgactgagt
+     2701 ctctcagaaa tcactgccac ttgcacaggg gaagtgacaa atgtgagtgg gtgttattct
+     2761 tgcatgacag gcgccaaagt ctccatcaag ttgcatagca gcaaaaatag cactgcccat
+     2821 gtaagatgca aaggggatga gactgccttc agtgtcttgg agggagtcca tagctactct
+     2881 gtcagtctca gttttgatca tgcagtagtt gatgagcagt gccaactgaa ctgtggggga
+     2941 catgagagtc aagtgactct gagaggcaac ctcatcttcc tggatgtccc gaaatttgtg
+     3001 gatggcagct acatgcagac atatcatagt actgtgccca caggagcaaa tatccctagc
+     3061 cctacagatt ggctaaatgc cttgtttggc aatgggctga gtaggtggat tctgggggtg
+     3121 acaggggtcc tactgggggg attggctctc tttttcttga tcatgtcttt gtttaagctg
+     3181 ggaacaaaac agatatttcg atcgaggaca aagctggctt agatgggcat atttctggtc
+     3241 taatgaccct ctgggggcag tgctctcagg ggagttggct cacagtgtgc atgtttcgtg
+     3301 gtcctggcgc acattcttag agcatggagg ttctgt
+//
+LOCUS       NC_043452               1681 bp    RNA     linear   VRL 28-JUN-2019
+DEFINITION  Severe fever with thrombocytopenia syndrome virus strain HNXH
+            segment S, complete sequence.
+ACCESSION   NC_043452
+VERSION     NC_043452.1
+DBLINK      BioProject: PRJNA485481
+KEYWORDS    RefSeq.
+SOURCE      Severe fever with thrombocytopenia syndrome virus
+  ORGANISM  Severe fever with thrombocytopenia syndrome virus
+            Viruses; Riboviria; Orthornavirae; Negarnaviricota;
+            Polyploviricotina; Ellioviricetes; Bunyavirales; Phenuiviridae;
+            Bandavirus; Dabie bandavirus.
+REFERENCE   1  (bases 1 to 1681)
+  CONSRTM   NCBI Genome Project
+  TITLE     Direct Submission
+  JOURNAL   Submitted (28-JUN-2019) National Center for Biotechnology
+            Information, NIH, Bethesda, MD 20894, USA
+COMMENT     PROVISIONAL REFSEQ: This record has not yet been subject to final
+            NCBI review. The reference sequence is identical to KT254589.
+            GenBank Accession Numbers KT254588-KT254590 represent sequences
+            from the 3 segments of Severe fever with thrombocytopenia syndrome
+            virus strain HNXH.
+            
+            ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+            COMPLETENESS: full length.
+FEATURES             Location/Qualifiers
+     source          1..1681
+                     /organism="Severe fever with thrombocytopenia syndrome
+                     virus"
+                     /mol_type="genomic RNA"
+                     /strain="HNXH"
+                     /isolation_source="serum"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:1003835"
+                     /segment="S"
+                     /country="China"
+                     /collection_date="11-Oct-2014"
+     gene            1..882
+                     /locus_tag="FLA12_sSgp1"
+                     /db_xref="GeneID:40526343"
+     CDS             1..882
+                     /locus_tag="FLA12_sSgp1"
+                     /codon_start=1
+                     /product="nonstructural protein"
+                     /protein_id="YP_009666135.1"
+                     /db_xref="GeneID:40526343"
+                     /translation="MSLSKCSNVDLKSVAMNANTVRLEPSLGEYPTLRRDLVECSCSV
+                     LTLSMVKRMGKMTNTVWLFGNPKNPLHQLEPGLEQLLDMYYKDMRCYSQRELSALRWP
+                     SGKPSVWFLQAAHMFFSIKNSWAMETGRENWRGLFHRITKSQKYLFEGDMILDSLEAI
+                     EKRRLRLGLPEILITGLSPILDVALLQIESLARLRGMSLNHHLFTSSSLRKPLLDCWD
+                     FFIPIRKKKTDGSYSVLDEDDEPGVLQGYPYLMAHYLNRCPFHNLIRFDEELRTAALD
+                     TIWGRDWPAIGDLPKEV"
+     gene            complement(937..1674)
+                     /locus_tag="FLA12_sSgp2"
+                     /db_xref="GeneID:40526342"
+     CDS             complement(937..1674)
+                     /locus_tag="FLA12_sSgp2"
+                     /codon_start=1
+                     /product="nucleocapsid protein"
+                     /protein_id="YP_009666136.1"
+                     /db_xref="GeneID:40526342"
+                     /translation="MSEWSRIAVEFGEQQLNLTELEDFARELAYEGLDPALIIKKLKE
+                     TGGDDWVKDTKFIIVFALTRGNKIVKASGKMSNSGSKRLMALQEKYGLVERAETRLSI
+                     TPVRVAQSLPTWTCAAAAALKEYLPVGPAVMNLKVENYPPEMMCMAFGSLIPTAGVSE
+                     ATTKTLMEAYSLWQDAFTKTINVKMRGASKTEVYNSFRDPLHAAVNSVFFPNDVRVKW
+                     LKAKGILGPDGVPSRAAEVAAAAYRNL"
+ORIGIN      
+        1 atgtcgctga gcaaatgctc caacgttgac ctcaaatctg tagcaatgaa tgctaacact
+       61 gttaggcttg agccttccct gggagagtac cccactctta ggagagacct cgttgaatgc
+      121 tcttgtagtg tgttgacttt gtcgatggtc aagaggatgg gcaagatgac caacacagta
+      181 tggttgtttg gcaaccctaa aaatcctctt catcagcttg agcctggact tgaacagctg
+      241 ttagacatgt actacaagga catgaggtgc tactcccaga gagaactgag tgctcttagg
+      301 tggcctagtg ggaagccatc tgtatggttc ctacaggcag ctcatatgtt cttctccatc
+      361 aagaacagct gggcaatgga aaccggaaga gagaactggc ggggcctctt ccacaggata
+      421 acaaaaagcc aaaagtatct tttcgaaggg gacatgatat tggattctct tgaagccata
+      481 gagaagcgaa gacttagact tgggttgcct gagattctga taactggact atccccaatt
+      541 ctggatgtgg ccctcctcca gatagagtca cttgcaaggc taagaggcat gagcttgaac
+      601 caccacttgt tcacttcttc ctcattgcgt aagcctctgt tagactgttg ggatttcttc
+      661 attcctatcc gcaaaaagaa gacagatggc tcatacagtg tcttggatga ggatgatgag
+      721 cctggggtcc tccagggtta cccatatctg atggcacact atttaaatag gtgcccattc
+      781 cacaacctca tcaggtttga tgaagaactg agaactgcag ccctggacac catttgggga
+      841 agagattggc cagccattgg tgacctcccg aaggaggtct aattttgtcg aattggatca
+      901 tggaatttag cctaattgga tatgtcaaat tgctgcttac aggtttctgt aagcagcagc
+      961 agcaacctca gcagctctgc tgggaacccc atctgggcca aggattccct tggccttcag
+     1021 ccacttcacc cgaacatcat tgggaaagaa gacagagttc acagcagcat ggagagggtc
+     1081 cctgaaggag ttataaactt ctgtcttgct ggctccacgc atcttcacat tgatagtctt
+     1141 ggtgaaggca tcttgccaca gagagtaagc ctccataagg gtcttggttg tggcttcaga
+     1201 tacccccgca gttggaatta gggatccaaa ggccatgcac atcatctcag ggggataatt
+     1261 ctcaaccttc aggttcatga cggctggccc cactgggaga tactccttta aggctgctgc
+     1321 tgctgcacat gtccaggtgg gaagactctg cgctaccctc acaggagtga ttgagagcct
+     1381 ggtttctgcc ctctcaacca gtccatactt ctcttggagt gccatcagcc tcttagaccc
+     1441 tgagttagac attttccctg atgccttgac gatcttattg cctcgagtta gggcaaagac
+     1501 aatgatgaac ttcgtatcct tcacccaatc atctccacct gtctccttca gcttcttgat
+     1561 gatcaaagca ggatcaaggc cttcataggc cagctctctc gcgaaatcct caagctcagt
+     1621 caaattgagc tgctgctcac caaactccac tgcaatcctg gaccactctg acatgatcac
+     1681 t
+//
