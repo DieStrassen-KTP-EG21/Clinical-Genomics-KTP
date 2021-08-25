@@ -15,14 +15,14 @@ class Patient(db.Model):
     isApproved= db.Column(db.Boolean,nullable=False,default= False)
     Sequence=db.Column(db.String(1000),nullable=False)
 
-    def __init__(self,name,ID,gender,phone,address,seqrec):
-        self.Name=name
-        self.ID=ID
-        self.Gender=gender
-        self.Phone=phone
-        self.Address=address
-        self.isSeen=False
-        self.isApproved=False
-        self.seqrec=SeqRecord(Seq("CAGTGCTAGTCAGTATGGCTAGTCATG"), id="test")
-        self.Sequence=seqrec.seq
+    # def __init__(self,name,ID,gender,phone,address,seqrec):
+    #     self.Name=name
+    #     self.ID=ID
+    #     self.Gender=gender
+    #     self.Phone=phone
+    #     self.Address=address
+    #     self.isSeen=False
+    #     self.isApproved=False
+    #     self.seqrec=SeqRecord(Seq("CAGTGCTAGTCAGTATGGCTAGTCATG"), id="test")
+    #     self.Sequence=seqrec.seq
         

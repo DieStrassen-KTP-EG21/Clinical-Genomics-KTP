@@ -1,9 +1,10 @@
+from re import A
 from typing import Sequence
 from flask_restful import Resource, reqparse
 from GA.controllers.authenticate import authenticate
 from GA.controllers.authenticate_type import authenticate_type
 from GA import NURSE, DM
-from GA.controllers.patient_controller import GetPatients,SetPatient
+from GA.controllers.patient_controller import GetPatients,SetPatient,DeletePatient
 from GA import cors
 
 Patient_Args = reqparse.RequestParser()
@@ -12,6 +13,9 @@ Patient_Args.add_argument("Gender", type=str, help="Gender is required", require
 Patient_Args.add_argument("Phone", type=str, help="Phone is required", required=True)
 Patient_Args.add_argument("Address", type=str, help="Address is required", required=True)
 Patient_Args.add_argument("Sequence", type=str, help="Sequence is required", required=True)
+
+Patient_Args1 = reqparse.RequestParser()
+Patient_Args1.add_argument("ID", type=int, help="ID is required", required=True)
 
 class Patient(Resource):
 	@authenticate
@@ -37,4 +41,6 @@ class Patient(Resource):
 	@authenticate
 	@authenticate_type([NURSE, DM])
 	def delete(current_user, self):
-		pass
+		Args2 = Patient_Args1.parse_args()
+		ID=Args2.ID
+		return DeletePatient(ID)
