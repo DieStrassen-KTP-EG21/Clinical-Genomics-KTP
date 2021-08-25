@@ -31,7 +31,9 @@ jobs:
         python run.py &
         PID=$!
         sleep 6
-        kill $PID       
+        kill $PID 
+        git checkout main
+        git merge backend
         
   deploy:
     needs: [buildAndRun]
