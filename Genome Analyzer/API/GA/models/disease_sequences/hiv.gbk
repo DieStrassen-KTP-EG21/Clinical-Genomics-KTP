@@ -1,0 +1,174 @@
+LOCUS       MW728316                 367 bp    RNA     linear   VRL 24-AUG-2021
+DEFINITION  HIV-1 Isolate 
+ACCESSION   MW728316
+VERSION     MW728316.1
+KEYWORDS    .
+SOURCE      Human immunodeficiency virus 1 (HIV-1)
+  ORGANISM  Human immunodeficiency virus 1
+            Viruses; Riboviria; Pararnavirae; Artverviricota; Revtraviricetes;
+            Ortervirales; Retroviridae; Orthoretrovirinae; Lentivirus.
+REFERENCE   1  (bases 1 to 367)
+  AUTHORS   Lewis,M.E., Jubb,B., Simpson,P., Lopatukhin,A., Kireev,D.,
+            Bobkova,M., Craig,C., van der Ryst,E., Westby,M. and Butler,S.L.
+  TITLE     Highly prevalent Russian HIV-1 V3-loop sequence variants are
+            susceptible to maraviroc
+  JOURNAL   Antivir Chem Chemother 29, 20402066211025156 (2021)
+   PUBMED   34160290
+REFERENCE   2  (bases 1 to 367)
+  AUTHORS   Lewis,M.E. and Craig,C.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (08-MAR-2021) Global Innovative Pharma, Pfizer Ltd,
+            Groton, CT 06340, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..367
+                     /organism="Human immunodeficiency virus 1"
+                     /mol_type="genomic RNA"
+                     /isolate="Pat3"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:11676"
+                     /country="Russia"
+                     /note="mpi=100;
+                     genotype: B"
+     gene            <1..>367
+                     /gene="env"
+     CDS             <1..>367
+                     /gene="env"
+                     /codon_start=1
+                     /product="envelope glycoprotein"
+                     /protein_id="QYF65041.1"
+                     /translation="LLNGSLAXXEVVIXSDNFSDNAKTIIVQLKEPVQIXCTRPNNNT
+                     RKSIPIGPGRAFYATGEVIGXIRQAYCNIXRAAWNNTLKQIVTXLGKQFGNXTINFTS
+                     SSGGDPEIVMHSFNCGGEFX"
+     misc_feature    109..213
+                     /gene="env"
+                     /note="V3 loop"
+ORIGIN      
+        1 ctgttaaatg gcagtctagc anaanaagag gtagtgatta natctgacaa tttctcagac
+       61 aatgctaaaa ccatcatagt acagctgaag gaacctgtac aaattanttg tacaagaccc
+      121 aacaacaata caagaaaaag tatacctata ggaccaggaa gagcatttta tgcaacagga
+      181 gaggtaatag ganatataag acaagcatat tgtaacatta ntagagcagc atggaataac
+      241 actttaaaac aaatagttac anaattaggt aaacaatttg gaaatannac aataaacttt
+      301 acgagctcct caggagggga cccagaaatt gtaatgcaca gttttaattg cggnggggag
+      361 tttttnt
+//
+LOCUS       MW782072                 612 bp    DNA     linear   VRL 09-AUG-2021
+DEFINITION  HIV-1 Isolate 
+ACCESSION   MW782072
+VERSION     MW782072.1
+KEYWORDS    .
+SOURCE      Human immunodeficiency virus 1 (HIV-1)
+  ORGANISM  Human immunodeficiency virus 1
+            Viruses; Riboviria; Pararnavirae; Artverviricota; Revtraviricetes;
+            Ortervirales; Retroviridae; Orthoretrovirinae; Lentivirus.
+REFERENCE   1  (bases 1 to 612)
+  AUTHORS   Omondi,F.H., Sudderuddin,H., Shahid,A., Kinloch,N.N., Jones,B.R.,
+            Miller,R.L., Tsai,O., MacMillan,D., Trocha,A., Brockman,M.A.,
+            Brumme,C.J., Joy,J.B., Liang,R., Walker,B.D. and Brumme,Z.L.
+  TITLE     Proviral burden, genetic diversity and dynamics during ART in
+            viremic controllers
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 612)
+  AUTHORS   Omondi,F.H., Sudderuddin,H., Shahid,A., Kinloch,N.N., Jones,B.R.,
+            Miller,R.L., Tsai,O., MacMillan,D., Trocha,A., Brockman,M.A.,
+            Brumme,C.J., Joy,J.B., Liang,R., Walker,B.D. and Brumme,Z.L.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (15-MAR-2021) Health Sciences, Simon Fraser University,
+            8888 University Drive, Burnaby, British Columbia V5A 1S6, Canada
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..612
+                     /organism="Human immunodeficiency virus 1"
+                     /proviral
+                     /mol_type="genomic DNA"
+                     /isolate="Y03911_21.2014-10-20"
+                     /isolation_source="PBMC"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:11676"
+                     /country="USA"
+                     /collection_date="20-Oct-2014"
+                     /note="subtype: B"
+     gene            1..612
+                     /gene="nef"
+     CDS             1..612
+                     /gene="nef"
+                     /codon_start=1
+                     /product="nef protein"
+                     /protein_id="QYJ59657.1"
+                     /translation="MGGKWSKRSMPGWSTIRERMRRAQPAEPAADGVGAASRDLEKHG
+                     ALTSSNTAANNPACAWLEAQEEEEVGFPVRPQVPLRPMTYKAAFDLSHFLKEKGGLEG
+                     LIYSQKRQEILDLWVYHTQGYFPDWQNYTPGPGVRFPLTFGWCFKLVPVEPTSEGEND
+                     CLLHPINQHGMDDSEGEVLQWKFDSRLAFHHMARELHPEYYKN"
+ORIGIN      
+        1 atgggtggca aatggtcaaa acgtagtatg cctggatggt ccactataag ggagagaatg
+       61 agacgagctc agccagcaga accagcagca gatggggtgg gagcagcatc tcgagaccta
+      121 gaaaaacatg gagcactcac aagcagcaat acagcagcta acaatcctgc ttgtgcatgg
+      181 ctagaagcac aagaggagga agaagtaggt tttccagtca gacctcaggt acctttaaga
+      241 cccatgacct ataaggcagc tttcgatctt agccactttt taaaagaaaa ggggggactg
+      301 gaagggctaa tttactccca gaaaagacaa gagatccttg atctgtgggt ctaccacaca
+      361 caaggctact tccctgattg gcagaattac actccaggac caggggtcag atttccactg
+      421 acctttggat ggtgcttcaa gctagtacca gttgaaccaa ccagtgaagg agagaacgac
+      481 tgcttgttac accctataaa ccagcatggg atggatgact cggagggaga agtgttacag
+      541 tggaagtttg acagccgcct agcatttcat cacatggccc gagagctgca tccggaatac
+      601 tacaagaact ga
+//
+LOCUS       MG184840                 341 bp    RNA     linear   VRL 31-JUL-2018
+DEFINITION  HIV-1 Isolate 
+ACCESSION   MG184840
+VERSION     MG184840.1
+KEYWORDS    .
+SOURCE      Human immunodeficiency virus 1 (HIV-1)
+  ORGANISM  Human immunodeficiency virus 1
+            Viruses; Riboviria; Pararnavirae; Artverviricota; Revtraviricetes;
+            Ortervirales; Retroviridae; Orthoretrovirinae; Lentivirus.
+REFERENCE   1  (bases 1 to 341)
+  AUTHORS   Lewis,M.E., Mori,J., Toma,J., Mosley,M., Huang,W., Simpson,P.,
+            Mansfield,R., Craig,C., van der Ryst,E., Robertson,D.L.,
+            Whitcomb,J.M. and Westby,M.
+  TITLE     Changes in Human immunodeficiency virus type 1 Associated with
+            Virologic Failure in Treatment-experienced Persons Receiving
+            Maraviroc: A Clonal Analysis of Genotype and Function
+  JOURNAL   Unpublished
+REFERENCE   2  (bases 1 to 341)
+  AUTHORS   Lewis,M.E., Mori,J., Toma,J., Mosley,M., Huang,W., Simpson,P.,
+            Mansfield,R., Craig,C., van der Ryst,E., Robertson,D.L.,
+            Whitcomb,J.M. and Westby,M.
+  TITLE     Direct Submission
+  JOURNAL   Submitted (11-OCT-2017) Global Innovative Pharma, Pfizer Ltd,
+            Groton, CT 06340, USA
+COMMENT     ##Assembly-Data-START##
+            Sequencing Technology :: Sanger dideoxy sequencing
+            ##Assembly-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..341
+                     /organism="Human immunodeficiency virus 1"
+                     /mol_type="genomic RNA"
+                     /isolate="PatT57day1clone_067_R"
+                     /host="Homo sapiens"
+                     /db_xref="taxon:11676"
+                     /note="phenotypic tropism R5;
+                     genotype: NR"
+     gene            <1..>341
+                     /gene="env"
+     CDS             <1..>341
+                     /gene="env"
+                     /note="gp120; V3 region"
+                     /codon_start=1
+                     /product="envelope glycoprotein"
+                     /protein_id="AXG33765.1"
+                     /translation="VHLNESVQINCTRPNNNTRKSLNMEPGGAIYATGDIIGDIRQAH
+                     CNLSSTQWNNTLKQIVEKLKEQYGNKTIKFNQSAGGDPEVVSHSFNCGGEFFYCDLAK
+                     LFNSTWNSQSHA"
+ORIGIN      
+        1 gtacatctga atgaatctgt acagattaat tgtacaaggc ctaataacaa tacaagaaaa
+       61 agcttaaata tggaaccagg aggagcaatt tatgcaacag gagacataat aggagatata
+      121 agacaagcac attgtaacct tagtagtaca caatggaata acactttaaa gcagatagtt
+      181 gaaaaattaa aagaacaata tgggaataag acaataaagt ttaatcaatc cgcaggaggg
+      241 gacccagaag ttgtatcgca cagctttaat tgtggagggg aatttttcta ctgtgactta
+      301 gcaaaactgt ttaatagtac ttggaattca cagtcccatg c
+//
+
