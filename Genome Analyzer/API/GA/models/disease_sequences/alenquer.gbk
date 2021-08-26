@@ -1,5 +1,5 @@
-LOCUS       NC_055330               6418 bp    RNA     linear   VRL 07-JUN-2021
-DEFINITION  Alenquer virus segment L, complete sequence.
+LOCUS       NC_055330             6418 bp    RNA     linear   VRL 07-JUN-2021
+DEFINITION  Alenquer virus
 ACCESSION   NC_055330
 VERSION     NC_055330.1
 DBLINK      BioProject: PRJNA485481
@@ -196,8 +196,8 @@ ORIGIN
      6301 agatcaaagt tgaggtgagg tacaaaaaac acaaagacca catggagaat tgtaccaatt
      6361 gtgtaaatag agaatattaa ttaatgacag attattcaat taagggcggt ctttgtgt
 //
-LOCUS       NC_055331               1751 bp    RNA     linear   VRL 07-JUN-2021
-DEFINITION  Alenquer virus segment S, complete sequence.
+LOCUS       NC_055331              1751 bp    RNA     linear   VRL 07-JUN-2021
+DEFINITION  Alenquer virus
 ACCESSION   NC_055331
 VERSION     NC_055331.1
 DBLINK      BioProject: PRJNA485481
@@ -300,7 +300,7 @@ ORIGIN
      1741 ggactttgtg t
 //
 LOCUS       NC_055332               4286 bp    RNA     linear   VRL 07-JUN-2021
-DEFINITION  Alenquer virus segment M, complete sequence.
+DEFINITION  Alenquer virus 
 ACCESSION   NC_055332
 VERSION     NC_055332.1
 DBLINK      BioProject: PRJNA485481

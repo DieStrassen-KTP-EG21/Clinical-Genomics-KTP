@@ -1,6 +1,5 @@
 LOCUS       NC_043450               6255 bp    RNA     linear   VRL 28-JUN-2019
-DEFINITION  Severe fever with thrombocytopenia syndrome virus strain HNXH
-            segment L, complete sequence.
+DEFINITION  Severe Fever with Thrombocytopenia Syndrome Virus 
 ACCESSION   NC_043450
 VERSION     NC_043450.1
 DBLINK      BioProject: PRJNA485481
@@ -191,8 +190,7 @@ ORIGIN
      6241 attatgtggg gttaa
 //
 LOCUS       NC_043451               3336 bp    RNA     linear   VRL 28-JUN-2019
-DEFINITION  Severe fever with thrombocytopenia syndrome virus strain HNXH
-            segment M, complete sequence.
+DEFINITION  Severe Fever with Thrombocytopenia Syndrome Virus
 ACCESSION   NC_043451
 VERSION     NC_043451.1
 DBLINK      BioProject: PRJNA485481
@@ -316,8 +314,7 @@ ORIGIN
      3301 gtcctggcgc acattcttag agcatggagg ttctgt
 //
 LOCUS       NC_043452               1681 bp    RNA     linear   VRL 28-JUN-2019
-DEFINITION  Severe fever with thrombocytopenia syndrome virus strain HNXH
-            segment S, complete sequence.
+DEFINITION  Severe Fever with Thrombocytopenia Syndrome Virus
 ACCESSION   NC_043452
 VERSION     NC_043452.1
 DBLINK      BioProject: PRJNA485481

@@ -1,6 +1,5 @@
 LOCUS       MW728316                 367 bp    RNA     linear   VRL 24-AUG-2021
-DEFINITION  HIV-1 isolate Pat3 from Russia envelope glycoprotein (env) gene,
-            partial cds.
+DEFINITION  HIV-1 Isolate 
 ACCESSION   MW728316
 VERSION     MW728316.1
 KEYWORDS    .
@@ -56,8 +55,7 @@ ORIGIN
       361 tttttnt
 //
 LOCUS       MW782072                 612 bp    DNA     linear   VRL 09-AUG-2021
-DEFINITION  HIV-1 isolate Y03911_21.2014-10-20 from USA nef protein (nef) gene,
-            complete cds.
+DEFINITION  HIV-1 Isolate 
 ACCESSION   MW782072
 VERSION     MW782072.1
 KEYWORDS    .
@@ -119,8 +117,7 @@ ORIGIN
       601 tacaagaact ga
 //
 LOCUS       MG184840                 341 bp    RNA     linear   VRL 31-JUL-2018
-DEFINITION  HIV-1 isolate PatT57day1clone_067_R envelope glycoprotein (env)
-            gene, partial cds.
+DEFINITION  HIV-1 Isolate 
 ACCESSION   MG184840
 VERSION     MG184840.1
 KEYWORDS    .

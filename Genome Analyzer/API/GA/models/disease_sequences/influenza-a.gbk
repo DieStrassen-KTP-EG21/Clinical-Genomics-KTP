@@ -1,6 +1,5 @@
 LOCUS       NC_026433               1701 bp    cRNA    linear   VRL 13-AUG-2018
-DEFINITION  Influenza A virus (A/California/07/2009(H1N1)) segment 4
-            hemagglutinin (HA) gene, complete cds.
+DEFINITION  Influenza A virus
 ACCESSION   NC_026433
 VERSION     NC_026433.1
 DBLINK      BioProject: PRJNA485481
