@@ -14,19 +14,6 @@ class Patient(db.Model):
     isApproved= db.Column(db.Boolean,nullable=False,default= False)
     Sequence=db.Column(db.String(3000),nullable=False)
 
-<<<<<<< HEAD
-    # def __init__(self,name,ID,gender,phone,address,seqrec):
-    #     self.Name=name
-    #     self.ID=ID
-    #     self.Gender=gender
-    #     self.Phone=phone
-    #     self.Address=address
-    #     self.isSeen=False
-    #     self.isApproved=False
-    #     self.seqrec=SeqRecord(Seq("CAGTGCTAGTCAGTATGGCTAGTCATG"), id="test")
-    #     self.Sequence=seqrec.seq
-        
-=======
     def __init__(self,name,gender,phone,address,seqrec):
         self.Name=name
         self.Gender=gender
@@ -35,4 +22,3 @@ class Patient(db.Model):
         self.isSeen=False
         self.isApproved=False
         self.Sequence=seqrec
->>>>>>> 73d5495f6bdc1d4d84e8aeabb38ae0373d88d840
