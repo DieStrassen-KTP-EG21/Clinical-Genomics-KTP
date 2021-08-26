@@ -9,7 +9,7 @@ from GA.models.genbank import *
 
 
 analyzer_args = reqparse.RequestParser()
-analyzer_args.add_argument("PatientID", type=str,required=True)
+analyzer_args.add_argument("PatientID", type=int,required=True)
 
 class Analyzer(Resource):
 	@authenticate
