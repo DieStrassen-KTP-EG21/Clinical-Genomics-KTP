@@ -12,7 +12,7 @@
             <b-button
               variant="danger"
               size="sm"
-              @click="deletePatient"
+              @click="analayzer"
               class="mr-2"
             >
               Run Analayser
@@ -100,6 +100,13 @@ export default {
       ],
     };
   },
+  methods:
+  {
+    analayzer()
+    {
+      this.$store.dispatch("Patient/analayzer");
+    }
+  }
 };
 </script>
 
