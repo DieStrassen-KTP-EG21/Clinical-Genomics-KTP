@@ -2,24 +2,74 @@
   ><div>
     <div class="cont">
       <HomeNavigation />
-     
-      <el-table :data="tableData" style="width: 100%">
-        <el-table-column type="expand">
-          <template #default="props">
-            <p>State: {{ props.row.state }}</p>
-            <p>City: {{ props.row.city }}</p>
-            <p>Address: {{ props.row.address }}</p>
+
+      <div>
+        <b-table
+      
+          :items="items"
+          :fields="fields"
+          striped
+          responsive="sm"
+        >
+          <template #cell(actions)="row">
+            <b-button size="sm" @click="row.toggleDetails" class="mr-2">
+              {{ row.detailsShowing ? "Hide" : "Show" }} Details
+            </b-button>
+            <b-button
+                v-for="(index) in items"
+          :key="index.ID"
+              variant="danger"
+              size="sm"
+              @click="deletePatient(index)"
+              class="mr-2"
+            >
+              Delete
+            </b-button>
+            <b-button
+              variant="outline-primary"
+              size="sm"
+              @click="editPatient"
+              class="mr-2"
+            >
+              Edit
+            </b-button>
+            <b-button
+              variant="success"
+              size="sm"
+              @click="approvePatient"
+              class="mr-2"
+            >
+              Approve
+            </b-button>
           </template>
-        </el-table-column>
-        <el-table-column label="Date" prop="date"> </el-table-column>
-        <el-table-column label="Name" prop="name"> </el-table-column>
-        <el-table-column label="ID" prop="ID"> </el-table-column>
-         <el-table-column > 
-          <router-link to="/Patient" tag="li" >
-          <a>Show</a>
-           </router-link>
-         </el-table-column>
-      </el-table>
+
+          <template #row-details="row">
+            <b-card>
+              <b-row class="mb-2">
+                <b-col sm="3" class="text-sm-right"><b>Phone:</b></b-col>
+                <b-col>{{ row.item.Phone }}</b-col>
+              </b-row>
+
+              <b-row class="mb-2">
+                <b-col sm="3" class="text-sm-right"><b>Gender:</b></b-col>
+                <b-col>{{ row.item.Gender }}</b-col>
+              </b-row>
+              <b-row class="mb-2">
+                <b-col sm="3" class="text-sm-right"><b>Address:</b></b-col>
+                <b-col>{{ row.item.Address }}</b-col>
+              </b-row>
+              <b-row class="mb-2">
+                <b-col sm="3" class="text-sm-right"><b>Sequence:</b></b-col>
+                <b-col>{{ row.item.Sequence }}</b-col>
+              </b-row>
+
+              <b-button size="sm" @click="row.toggleDetails"
+                >Hide Details</b-button
+              >
+            </b-card>
+          </template>
+        </b-table>
+      </div>
     </div>
   </div>
 </template>
@@ -33,65 +83,53 @@ export default {
   },
   data() {
     return {
-      tableData: [
+      fields: ["Name", "ID", "Actions"],
+      items: [
         {
-          date: "2016-05-03",
-          name: "Tom",
-          state: "California",
-          city: "Los Angeles",
-          address: "No. 189, Grove St, Los Angeles",
-          ID: "90036",
+          isApproved: true,
+          Phone: 404676,
+          Name: "Dickerson",
+          ID: 23,
+          Gender: "Male",
+          Address: "LA",
+          Sequence: "ATCGTAGC",
         },
         {
-          date: "2016-05-02",
-          name: "Tom",
-          state: "California",
-          city: "Los Angeles",
-          address: "No. 189, Grove St, Los Angeles",
-          ID: " 90036",
+          isApproved: false,
+          Phone: 243541,
+          Name: "Larsen",
+          ID: 54,
+          Gender: "Female",
+          Address: "NY",
+          Sequence: "GCTAGTACGA",
         },
         {
-          date: "2016-05-04",
-          name: "Tom",
-          state: "California",
-          city: "Los Angeles",
-          address: "No. 189, Grove St, Los Angeles",
-          ID: "90036",
+          isApproved: false,
+          Phone: 834349,
+          Name: "Geneva",
+          ID: 22,
+          Gender: "Female",
+          Address: "Boston",
+          Sequence: "TAAGAGC",
         },
         {
-          date: "2016-05-01",
-          name: "Tom",
-          state: "California",
-          city: "Los Angeles",
-          address: "No. 189, Grove St, Los Angeles",
-          ID: " 90036",
-        },
-        {
-          date: "2016-05-08",
-          name: "Tom",
-          state: "California",
-          city: "Los Angeles",
-          address: "No. 189, Grove St, Los Angeles",
-          ID: " 90036",
-        },
-        {
-          date: "2016-05-06",
-          name: "Tom",
-          state: "California",
-          city: "Los Angeles",
-          address: "No. 189, Grove St, Los Angeles",
-          ID: " 90036",
-        },
-        {
-          date: "2016-05-07",
-          name: "Tom",
-          state: "California",
-          city: "Los Angeles",
-          address: "No. 189, Grove St, Los Angeles",
-          ID: " 90036",
+          isApproved: true,
+          Phone: 3865454,
+          Name: "Jami",
+          ID: 92,
+          Gender: "Male",
+          Address: "Arizona",
+          Sequence: "ATCGGAGC",
         },
       ],
+
     };
+  },
+  methods: {
+    deletePatient: function(idx) {
+
+      this.items.splice(idx, 1);
+    },
   },
 };
 </script>
@@ -108,5 +146,8 @@ export default {
   background-position: center;
   background-size: 100% 100%;
   position: absolute;
+}
+.mr-2 {
+  margin: 4px;
 }
 </style>
