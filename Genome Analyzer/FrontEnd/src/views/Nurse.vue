@@ -123,5 +123,10 @@ button {
 }
 #opt {
   cursor: pointer;
+  margin-bottom: 0px;
+}
+input,.form-control
+{
+  margin-bottom: 10px;
 }
 </style>

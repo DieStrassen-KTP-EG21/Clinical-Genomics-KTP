@@ -6,7 +6,6 @@ import Nurse from "../views/Nurse.vue";
 import Login from "../views/Login.vue";
 import Admin from "../views/Admin.vue";
 import Doctor from "../views/Doctor.vue";
-import Patient from "../views/Patient.vue";
 import AddStaff from "../views/AddStaff.vue";
 import Report from "../views/Report.vue";
 import Element from 'element-ui'
@@ -45,10 +44,6 @@ const routes = [
     path: "/Doctor",
     name: "Doctor",
     component: Doctor,
-  }, {
-    path: "/Patient",
-    name: "Patient",
-    component: Patient,
   },
   {
     path: "/Report",

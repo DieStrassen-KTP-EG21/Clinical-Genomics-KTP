@@ -1,10 +1,19 @@
 import axios from "axios";
-import store from "../store";
 export default {
   namespaced: true,
+  state: {
+    msg:""
+  },
+  mutations: {
+    auth(state,res) {
+      state.msg=res;
+    },
+  },
   actions: {
-      addstaff({ commit }, staff) {
-        axios.defaults.headers.common["access-token"] = localStorage.getItem("access-token");
+      addstaff({commit}, staff) {
+        axios.defaults.headers.common["x-access-token"] = localStorage.getItem("access-token");
+        console.log(localStorage.getItem("access-token"));
+        console.log(staff);
         axios.post("https://genomicanalyzer.herokuapp.com/signup", {
           Name: staff.Name,
           Password: staff.Password,
@@ -16,17 +25,16 @@ export default {
         })
         .then((response) => {
           console.log(response);
-          const token = response.data.access_token;
-          console.log(token);
-          localStorage.setItem("access-token", token);
-          axios.defaults.headers.common["access-token"] = token;
-          store.dispatch("Authorization/get_user", true);
+          commit("auth","success");
         })
-        .catch((error) => {
-          console.log(error);
-          commit("auth_error", "not user by this email");
-          localStorage.removeItem("access-token");
+        .catch(err=> {
+          console.log(err);
+          commit("auth","Some Thing wrong , Please try other user Name and all fied check is it not empty");
         });
     }
   }
+  ,
+  getters: {
+    msg: (state) => state.msg,
+  },
 };
